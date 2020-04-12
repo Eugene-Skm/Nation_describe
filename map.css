@@ -1,0 +1,14 @@
+
+.nation_image, .nation_image_c {
+    height: 90%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+}
+.nation_image_c {
+    visibility: hidden;
+}
+#image_place {
+    height: 90px;
+    display: inline-block
+    position: absolute;
+}
