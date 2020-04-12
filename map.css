@@ -1,14 +1,44 @@
 
 .nation_image, .nation_image_c {
-    height: 90%;
+    width: 90vmin;
+    height: 90vmin;
     position: absolute;
-    transform: translate(-50%, 0%);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+        
 }
 .nation_image_c {
     visibility: hidden;
 }
 #image_place {
-    height: 90px;
-    display: inline-block
+    box-sizing: inherit;
+    width: 90vmin;
+    height: 90vmin;
+    display: inline-block;
     position: absolute;
+    background-color: cornflowerblue;
+    top:50%;
+    left: 50%;
+     transform: translate(-50%,-50%)
+}
+
+#pref_label {
+    display: inline-block;
+    position: absolute;
+    width: 90vmin;
+    height: 90vmin;
+        top: 0%;
+    left: 0%;
+    
+}
+
+.pref_label {
+    position: absolute;
+}
+#capital{
+    top: 52%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+        
 }
