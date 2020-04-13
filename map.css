@@ -1,42 +1,29 @@
-.nation_image,
-.nation_image_c {
-    width: 90vmin;
-    height: 90vmin;
+.Map_size {
+    width: 800px;
+    height: 800px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
-.nation_image_c {
+.pref_images {
     visibility: hidden;
 }
 
-#image_place {
-    box-sizing: inherit;
-    width: 90vmin;
-    height: 90vmin;
+#map_images {
+    box-sizing: border-box;
     display: inline-block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-#pref_label {
-    display: inline-block;
-    position: absolute;
-    width: 90vmin;
-    height: 90vmin;
-    top: 0%;
-    left: 0%;
-
+    position: relative;
+    width: 800px;
+    height: 800px;
+    top: 0px;
+    left: 0px;
 }
 
 .pref_label {
     position: absolute;
     cursor: pointer;
-
 }
 
 .pref_label > p {
@@ -54,3 +41,5 @@
 #capital:hover + #pref13 {
     background-color: antiquewhite;
 }
+
+@media screen and (min-width: 800px) {}
