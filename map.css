@@ -1,26 +1,26 @@
-
-.nation_image, .nation_image_c {
+.nation_image,
+.nation_image_c {
     width: 90vmin;
     height: 90vmin;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%)
-        
+    transform: translate(-50%, -50%)
 }
+
 .nation_image_c {
     visibility: hidden;
 }
+
 #image_place {
     box-sizing: inherit;
     width: 90vmin;
     height: 90vmin;
     display: inline-block;
     position: absolute;
-    background-color: cornflowerblue;
-    top:50%;
+    top: 50%;
     left: 50%;
-     transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
 }
 
 #pref_label {
@@ -28,17 +28,29 @@
     position: absolute;
     width: 90vmin;
     height: 90vmin;
-        top: 0%;
+    top: 0%;
     left: 0%;
-    
+
 }
 
 .pref_label {
     position: absolute;
+    cursor: pointer;
+
 }
-#capital{
+
+.pref_label > p {
+    line-height: 1;
+    margin: 0;
+}
+
+
+#capital {
     top: 52%;
-    left: 75%;
-    transform: translate(-50%,-50%);
-        
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
+
+#capital:hover + #pref13 {
+    background-color: antiquewhite;
 }
