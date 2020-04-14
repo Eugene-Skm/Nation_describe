@@ -1,6 +1,6 @@
 .Map_size {
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,12 +11,12 @@
     visibility: hidden;
 }
 
-#map_images {
+#map_element {
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 750px;
+    height: 750px;
     top: 0px;
     left: 0px;
 }
@@ -32,7 +32,7 @@
 }
 
 
-#capital {
+#Tokyo {
     top: 52%;
     left: 77%;
     transform: translate(-50%, -50%);
@@ -42,4 +42,24 @@
     background-color: antiquewhite;
 }
 
-@media screen and (min-width: 800px) {}
+@media screen and (min-width: 750px) {}
+
+#Kyoto {
+    top: 56%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+#map {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 750px;
+
+}
+
+#maptitle {
+    font-size: 26px;
+    border-bottom: 1px solid #ee0044;
+    margin-bottom: 2px;
+}

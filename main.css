@@ -14,12 +14,15 @@ body {
     margin: 0px;
 }
 
-#main_part {
+#topcontent {
     box-sizing: border-box;
     width: 100vw;
     height: auto;
     padding: 0px;
     background: radial-gradient(circle closest-side at 50% 50%, #FF000035 0%, #FF000035 50%, #FFFFFF 50%, #FFFFFF 100%);
+    text-align: center;
+    /*display: flex;
+    justify-content: center;*/
 }
 
 #Main_header {
@@ -31,6 +34,7 @@ body {
     padding-top: 0.5vh;
     padding-bottom: 0.5vh;
     text-align: center;
+
 }
 
 
@@ -39,12 +43,14 @@ body {
     box-sizing: border-box;
     width: 100vw;
     height: auto;
+    margin: 0px;
     padding-top: 5px;
     padding-bottom: 2px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     border-bottom: 1px solid #ee0011;
+    list-style: none;
 
 }
 
@@ -66,9 +72,13 @@ body {
 }
 
 #logo {
+
     padding-bottom: 2px;
     font-size: 40px;
+    height: 45px;
     border-bottom: 4px solid #ee0011ee;
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -82,4 +92,102 @@ body {
         visibility: hidden;
         height: 0px;
     }
+}
+
+.region_menu {
+    width: 150px;
+    padding-left: 20px;
+    text-align: left;
+    position: absolute;
+}
+
+.region_menu label {
+    display: inline-block;
+    font-size: 26px;
+    width: 140px;
+    height: 30px;
+    line-height: 26px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid #444444;
+    border-left: 3px solid #444444;
+}
+
+.region_menu .pref_accordion:hover,
+.region_menu li:hover {
+    background-color: #eeeeee;
+    font-size: 28px;
+    border-left: 1px solid #777777;
+}
+
+
+
+.region_menu input {
+    display: none;
+}
+
+.region_menu ul {
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    list-style: none;
+}
+
+.region_menu li {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+}
+
+.region_menu label:hover {}
+
+
+
+#label_Hokkaido:checked ~ #Pref_set_Hokkaido li,
+#label_Tohoku:checked ~ #Pref_set_Tohoku li,
+#label_Kanto:checked ~ #Pref_set_Kanto li,
+#label_Kinki:checked ~ #Pref_set_Kinki li,
+#label_Tyugoku:checked ~ #Pref_set_Tyugoku li,
+#label_Shikoku:checked ~ #Pref_set_Shikoku li,
+#label_Kyushu:checked ~ #Pref_set_Kyushu li,
+#label_Tyubu:checked ~ #Pref_set_Tyubu li {
+    max-height: 46px;
+    opacity: 1;
+}
+
+.pref_accordion {}
+
+
+
+p {
+    margin: 1px;
+}
+
+.Lmenu_Pref_name {
+    font-size: 20px;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px;
+    cursor: pointer;
+
+}
+
+#menu_title {
+    width: 200px;
+    font-size: 24px;
+    padding-left: 0px;
+    background-color: #dddddd;
+    border-bottom: 2px solid #444444;
+}
+
+#topcontent {
+    height: auto;
+}
+
+#scroll_introduction {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
 }
