@@ -1,12 +1,10 @@
 function Pre_hover(id) {
     document.getElementById("pref" + id).style.visibility = "visible";
-    document.getElementById("national").style.opacity = 0.9;
 
 }
 
 function Pre_hover_out(id) {
     document.getElementById("pref" + id).style.visibility = "hidden";
-    document.getElementById("national").style.opacity = 1;
 }
 var Dataset = [];
 
