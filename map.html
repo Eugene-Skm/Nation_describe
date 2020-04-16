@@ -2,28 +2,99 @@
 <html>
 
 <head>
-    <title>Explore in Japan</title>
+    <title>Japan Map | Explore in Japan</title>
     <meta http-equiv="content-type" charset="utf-8">
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="map.css" type="text/css">
     <script type="text/javascript" src="map.js" charset="utf-8"></script>
+    <script type="text/javascript" src="time.js" charset="utf-8"></script>
 </head>
 
-<body>
+<body onload="trigger()">
     <div id="Main_header">
         <div id="logo">
             Explore in Japan
         </div>
         <ul id="header_menu">
-            <li id="H_menu_con1" class="Hmenu_contents">menu1</li>
-            <li id="H_menu_con2" class="Hmenu_contents">menu2</li>
-            <li id="H_menu_con3" class="Hmenu_contents">menu3</li>
-            <li id="H_menu_con4" class="Hmenu_contents">menu4</li>
+            <label for="Hmenu_res" class="Hmenu_res">menu</label>
+            <input type="checkbox" name="checkbox" id="Hmenu_res">
+            <li id="H_menu_con1" class="Hmenu_contents"><a href="index.html">Home</a></li>
+            <li id="H_menu_con2" class="Hmenu_contents"><a herf="map.html">Map</a></li>
+            <li id="H_menu_con3" class="Hmenu_contents">Tips</li>
+            <li id="H_menu_con4" class="Hmenu_contents">Spot</li>
+            <li id="H_menu_con5" class="Hmenu_contents">Blog</li>
         </ul>
-        <!--<div id="header_shade" class=""></div>-->
     </div>
     <div id="main">
         <div id="topcontent">
+
+
+            <div id="map">
+                <!--<div id="maptitle">
+                <p>Japan Map</p>
+</div>-->
+
+                <div id="map_element">
+                    <img src="material/0-4.png" id="national" class="Map_size">
+                    <img src="material/1-2.png" id="pref1" class="Map_size pref_images">
+                    <img src="material/2-2.png" id="pref2" class="Map_size pref_images">
+                    <img src="material/3-2.png" id="pref3" class="Map_size pref_images">
+                    <img src="material/4-2.png" id="pref4" class="Map_size pref_images">
+                    <img src="material/5-2.png" id="pref5" class="Map_size pref_images">
+                    <img src="material/6-2.png" id="pref6" class="Map_size pref_images">
+                    <img src="material/7-2.png" id="pref7" class="Map_size pref_images">
+                    <img src="material/8-2.png" id="pref8" class="Map_size pref_images">
+                    <img src="material/9-2.png" id="pref9" class="Map_size pref_images">
+                    <img src="material/10-2.png" id="pref10" class="Map_size pref_images">
+                    <img src="material/11-2.png" id="pref11" class="Map_size pref_images">
+                    <img src="material/12-2.png" id="pref12" class="Map_size pref_images">
+                    <img src="material/13-2.png" id="pref13" class="Map_size pref_images">
+                    <img src="material/14-2.png" id="pref14" class="Map_size pref_images">
+                    <img src="material/15-2.png" id="pref15" class="Map_size pref_images">
+                    <img src="material/16-2.png" id="pref16" class="Map_size pref_images">
+                    <img src="material/17-2.png" id="pref17" class="Map_size pref_images">
+                    <img src="material/18-2.png" id="pref18" class="Map_size pref_images">
+                    <img src="material/19-2.png" id="pref19" class="Map_size pref_images">
+                    <img src="material/20-2.png" id="pref20" class="Map_size pref_images">
+                    <img src="material/21-2.png" id="pref21" class="Map_size pref_images">
+                    <img src="material/22-2.png" id="pref22" class="Map_size pref_images">
+                    <img src="material/23-2.png" id="pref23" class="Map_size pref_images">
+                    <img src="material/24-2.png" id="pref24" class="Map_size pref_images">
+                    <img src="material/25-2.png" id="pref25" class="Map_size pref_images">
+                    <img src="material/26-2.png" id="pref26" class="Map_size pref_images">
+                    <img src="material/27-2.png" id="pref27" class="Map_size pref_images">
+                    <img src="material/28-2.png" id="pref28" class="Map_size pref_images">
+                    <img src="material/29-2.png" id="pref29" class="Map_size pref_images">
+                    <img src="material/30-2.png" id="pref30" class="Map_size pref_images">
+                    <img src="material/31-2.png" id="pref31" class="Map_size pref_images">
+                    <img src="material/32-2.png" id="pref32" class="Map_size pref_images">
+                    <img src="material/33-2.png" id="pref33" class="Map_size pref_images">
+                    <img src="material/34-2.png" id="pref34" class="Map_size pref_images">
+                    <img src="material/35-2.png" id="pref35" class="Map_size pref_images">
+                    <img src="material/36-2.png" id="pref36" class="Map_size pref_images">
+                    <img src="material/37-2.png" id="pref37" class="Map_size pref_images">
+                    <img src="material/38-2.png" id="pref38" class="Map_size pref_images">
+                    <img src="material/39-2.png" id="pref39" class="Map_size pref_images">
+                    <img src="material/40-2.png" id="pref40" class="Map_size pref_images">
+                    <img src="material/41-2.png" id="pref41" class="Map_size pref_images">
+                    <img src="material/42-2.png" id="pref42" class="Map_size pref_images">
+                    <img src="material/43-2.png" id="pref43" class="Map_size pref_images">
+                    <img src="material/44-2.png" id="pref44" class="Map_size pref_images">
+                    <img src="material/45-2.png" id="pref45" class="Map_size pref_images">
+                    <img src="material/46-2.png" id="pref46" class="Map_size pref_images">
+                    <img src="material/47-2.png" id="pref47" class="Map_size pref_images">
+                    <div id="pref_labels" class="Map_size">
+                        <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
+                            <p>Tokyo</p>
+                        </div>
+                        <div id="Kyoto" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
+                            <p>Kyoto</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
             <div id="left">
                 <div class="region_menu" id="region_list_title">
                     <label for="region_list_title" id="menu_title">Region&Pref. List</label>
@@ -111,76 +182,15 @@
 
                 </div>
             </div>
-
-            <div id="map">
-                <!--<div id="maptitle">
-                <p>Japan Map</p>
-</div>-->
-
-                <div id="map_element">
-                    <img src="material/0-4.png" id="national" class="Map_size">
-                    <img src="material/1-2.png" id="pref1" class="Map_size pref_images">
-                    <img src="material/2-2.png" id="pref2" class="Map_size pref_images">
-                    <img src="material/3-2.png" id="pref3" class="Map_size pref_images">
-                    <img src="material/4-2.png" id="pref4" class="Map_size pref_images">
-                    <img src="material/5-2.png" id="pref5" class="Map_size pref_images">
-                    <img src="material/6-2.png" id="pref6" class="Map_size pref_images">
-                    <img src="material/7-2.png" id="pref7" class="Map_size pref_images">
-                    <img src="material/8-2.png" id="pref8" class="Map_size pref_images">
-                    <img src="material/9-2.png" id="pref9" class="Map_size pref_images">
-                    <img src="material/10-2.png" id="pref10" class="Map_size pref_images">
-                    <img src="material/11-2.png" id="pref11" class="Map_size pref_images">
-                    <img src="material/12-2.png" id="pref12" class="Map_size pref_images">
-                    <img src="material/13-2.png" id="pref13" class="Map_size pref_images">
-                    <img src="material/14-2.png" id="pref14" class="Map_size pref_images">
-                    <img src="material/15-2.png" id="pref15" class="Map_size pref_images">
-                    <img src="material/16-2.png" id="pref16" class="Map_size pref_images">
-                    <img src="material/17-2.png" id="pref17" class="Map_size pref_images">
-                    <img src="material/18-2.png" id="pref18" class="Map_size pref_images">
-                    <img src="material/19-2.png" id="pref19" class="Map_size pref_images">
-                    <img src="material/20-2.png" id="pref20" class="Map_size pref_images">
-                    <img src="material/21-2.png" id="pref21" class="Map_size pref_images">
-                    <img src="material/22-2.png" id="pref22" class="Map_size pref_images">
-                    <img src="material/23-2.png" id="pref23" class="Map_size pref_images">
-                    <img src="material/24-2.png" id="pref24" class="Map_size pref_images">
-                    <img src="material/25-2.png" id="pref25" class="Map_size pref_images">
-                    <img src="material/26-2.png" id="pref26" class="Map_size pref_images">
-                    <img src="material/27-2.png" id="pref27" class="Map_size pref_images">
-                    <img src="material/28-2.png" id="pref28" class="Map_size pref_images">
-                    <img src="material/29-2.png" id="pref29" class="Map_size pref_images">
-                    <img src="material/30-2.png" id="pref30" class="Map_size pref_images">
-                    <img src="material/31-2.png" id="pref31" class="Map_size pref_images">
-                    <img src="material/32-2.png" id="pref32" class="Map_size pref_images">
-                    <img src="material/33-2.png" id="pref33" class="Map_size pref_images">
-                    <img src="material/34-2.png" id="pref34" class="Map_size pref_images">
-                    <img src="material/35-2.png" id="pref35" class="Map_size pref_images">
-                    <img src="material/36-2.png" id="pref36" class="Map_size pref_images">
-                    <img src="material/37-2.png" id="pref37" class="Map_size pref_images">
-                    <img src="material/38-2.png" id="pref38" class="Map_size pref_images">
-                    <img src="material/39-2.png" id="pref39" class="Map_size pref_images">
-                    <img src="material/40-2.png" id="pref40" class="Map_size pref_images">
-                    <img src="material/41-2.png" id="pref41" class="Map_size pref_images">
-                    <img src="material/42-2.png" id="pref42" class="Map_size pref_images">
-                    <img src="material/43-2.png" id="pref43" class="Map_size pref_images">
-                    <img src="material/44-2.png" id="pref44" class="Map_size pref_images">
-                    <img src="material/45-2.png" id="pref45" class="Map_size pref_images">
-                    <img src="material/46-2.png" id="pref46" class="Map_size pref_images">
-                    <img src="material/47-2.png" id="pref47" class="Map_size pref_images">
-                    <div id="pref_labels" class="Map_size">
-                        <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
-                            <p>Tokyo</p>
-                        </div>
-                        <div id="Kyoto" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
-                            <p>Kyoto</p>
-                        </div>
-
-                    </div>
-
-                </div>
+            <div id="right">
+                <div id="JapanTime"></div>
             </div>
+
         </div>
         <div id="scroll_introduction">
-            <p>What is Japan</p>
+            <p></p>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>

@@ -1,6 +1,12 @@
+:root {
+    /*マップ幅高さの変数化*/
+    --map-size-width: 800px;
+    --map-size-height: 800px;
+}
+
 .Map_size {
-    width: 750px;
-    height: 750px;
+    width: var(--map-size-width);
+    height: var(--map-size-height);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -9,14 +15,21 @@
 
 .pref_images {
     visibility: hidden;
+
+
+    /* filter: hue-rotate(10deg);*/
+
+    filter: saturate(70%)brightness(140%);
+
+
 }
 
 #map_element {
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-    width: 750px;
-    height: 750px;
+    width: var(--map-size-width);
+    height: var(--map-size-height);
     top: 0px;
     left: 0px;
 }
@@ -32,17 +45,19 @@
 }
 
 
-#Tokyo {
-    top: 52%;
-    left: 77%;
-    transform: translate(-50%, -50%);
-}
+
 
 #capital:hover + #pref13 {
     background-color: antiquewhite;
 }
 
-@media screen and (min-width: 750px) {}
+
+
+#Tokyo {
+    top: 52%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+}
 
 #Kyoto {
     top: 56%;
@@ -54,12 +69,30 @@
     box-sizing: border-box;
     display: inline-block;
     position: relative;
-    width: 750px;
-
+    width: var(--map-size-width);
+    height: auto;
 }
 
 #maptitle {
     font-size: 26px;
     border-bottom: 1px solid #ee0044;
     margin-bottom: 2px;
+}
+
+/*----------------------------レスポンシブ--------------------------------*/
+@media screen and (max-width: 750px) {
+
+    /*マップ幅高さの変数化*/
+    :root {
+        --map-size-width: 600px;
+        --map-size-height: 600px;
+    }
+}
+
+#right {
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    right: 0px;
+    background-color: aqua;
 }
