@@ -1,6 +1,8 @@
+:root {}
+
 html {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     font-size: 1.5vmin;
     font-family: "inherit", "Arial", "Helvetica Neue";
@@ -9,10 +11,16 @@ html {
 
 body {
     width: 100vw;
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
     margin: 0px;
+    padding: 0px;
 }
+
+p {
+    margin: 1px;
+}
+
 
 /*------ a link文字色　一律 #000000 -----*/
 a:link {
@@ -48,17 +56,17 @@ a:active {
     justify-content: center;
 }
 
+/*=======================ヘッダ===============================*/
 #Main_header {
-    position: relative;
+    position: fixed;
+    top: 0px;
     visibility: visible;
     box-sizing: border-box;
     width: 100vw;
     height: auto;
-    padding-top: 0vh;
-    padding-bottom: 0.5vh;
+    padding: 0vh;
     text-align: center;
-
-
+    z-index: 999;
 }
 
 
@@ -66,7 +74,6 @@ a:active {
     position: relative;
     box-sizing: border-box;
     width: 100%;
-    height: auto;
     margin: 0px;
     padding-left: 2px;
     padding-top: 5px;
@@ -76,6 +83,7 @@ a:active {
     flex-wrap: nowrap;
     justify-content: center;
     border-bottom: 1px solid #eeeeee;
+    background-color: #ffffff;
     list-style: none;
 
 }
@@ -98,7 +106,6 @@ a:active {
 
 #header_menu input {
     display: none;
-
 }
 
 .Hmenu_contents {
@@ -131,6 +138,60 @@ a:active {
 
 }
 
+
+#menu_title {
+    width: 150px;
+    font-size: 22px;
+    padding-left: 0px;
+}
+
+#topcontent {
+    height: auto;
+}
+
+#scroll_introduction {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#H_menu_con5 {
+    border-right: 1px solid #cccccc;
+
+}
+
+/*===========================サイドバー===============================*/
+#left,
+#right {
+    position: absolute;
+    height: auto;
+    min-height: 86%;
+    background-color: #fefefe;
+
+    padding-top: 10px;
+
+}
+
+#left {
+    left: 0px;
+    width: 300px;
+    border-right: 1px solid #eeeeee;
+    padding-top: 10px;
+}
+
+#right {
+    right: 0px;
+    width: 400px;
+    border-left: 1px solid #eeeeee;
+}
+
+/*------------------------------左サイドバー内部コンテンツ------------------------------*/
+
+/*~~~~~~~~~~~~~~~~~~~start県名一覧~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .region_menu {
     width: 150px;
     padding-left: 20px;
@@ -157,8 +218,6 @@ a:active {
     border-left: 5px solid #777777;
 }
 
-
-
 .region_menu input {
     display: none;
 }
@@ -176,6 +235,17 @@ a:active {
     transition: all 0.5s;
 }
 
+.Lmenu_Pref_name {
+    font-size: 20px;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 18px;
+    cursor: pointer;
+
+}
+
+/*~~~~~~~~~~アコーディオンオープン~~~~~~~~~~~~~~*/
 
 
 #label_Hokkaido:checked ~ #Pref_set_Hokkaido li,
@@ -192,56 +262,62 @@ a:active {
 
 
 
-p {
-    margin: 1px;
+
+/*~~~~~~~~~~~~~~~~~~~~~~~End県名一覧~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*------------------------------右サイドバー内部コンテンツ------------------------------*/
+
+/*~~~~~~~~~~~~~~~~~~~start日本時間表示~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#JapanTime {
+    display: inline-block;
+    width: 80%;
+    padding: 5px;
+    padding-right: 15px;
+    text-align: right;
+    border-bottom: 2px solid #ececec;
 }
 
-.Lmenu_Pref_name {
+#JPtime h1 {
+    font-size: 22px;
+    margin: 0px;
+}
+
+#JTime {
+    font-size: 44px;
+}
+
+#JDate {
     font-size: 20px;
-    width: 140px;
-    height: 30px;
-    line-height: 30px;
-    padding-left: 18px;
-    cursor: pointer;
-
 }
 
-#menu_title {
-    width: 200px;
-    font-size: 24px;
-    padding-left: 0px;
-    /* background-color: #dddddd;*/
-    border-bottom: 2px solid #bbbbbb;
+#TZ {
+    font-size: 16px;
 }
 
-#topcontent {
-    height: auto;
+#TDif {
+    font-size: 16px;
 }
 
-#scroll_introduction {
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
+/*~~~~~~~~~~~~~~~~~~~start日本時間表示~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*===========================レスポンシブ===============================*/
+@media screen and (max-width: 1500px) {
+    #right {
+        width: 300px;
+    }
+
+    #left {
+        width: 200px;
+    }
 }
 
-a {
-    text-decoration: none;
+@media screen and (max-width: 1200px) {
+    #right {
+        width: 200px;
+    }
 }
 
-#H_menu_con5 {
-    border-right: 1px solid #cccccc;
-
-}
-
-#left {
-    position: absolute;
-    left: 0px;
-    width: 220px;
-    top: 100px;
-    background-color: #ffffff
-}
-
-/*----------------------------レスポンシブ--------------------------------*/
+@media screen and (max-width: 1000px) {}
 
 @media screen and (max-width: 800px) {
 
@@ -287,4 +363,42 @@ a {
 
 }
 
+#preflisttitle {
+    font-size: 22px;
+    padding-left: 50px;
+}
 
+#pref_title label {
+    margin: 0px;
+}
+
+#pref_title {
+    border-bottom: 2px solid #aaaaaa;
+}
+
+.label_Hokkaido::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid #000000;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+}
+
+label[id^="labels"]::before {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid #000000;
+    border-right: 5px solid transparent;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+#main {
+    margin-top: 90px;
+}

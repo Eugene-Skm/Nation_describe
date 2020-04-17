@@ -28,6 +28,7 @@
     box-sizing: border-box;
     display: inline-block;
     position: relative;
+    margin-top: 10px;
     width: var(--map-size-width);
     height: var(--map-size-height);
     top: 0px;
@@ -80,6 +81,15 @@
 }
 
 /*----------------------------レスポンシブ--------------------------------*/
+@media screen and (max-width: 1200px) {
+
+    /*マップ幅高さの変数化*/
+    :root {
+        --map-size-width: 650px;
+        --map-size-height: 650px;
+    }
+}
+
 @media screen and (max-width: 750px) {
 
     /*マップ幅高さの変数化*/
@@ -87,12 +97,4 @@
         --map-size-width: 600px;
         --map-size-height: 600px;
     }
-}
-
-#right {
-    position: absolute;
-    width: 400px;
-    height: 100%;
-    right: 0px;
-    background-color: aqua;
 }

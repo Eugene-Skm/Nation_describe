@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Japan Map | Explore in Japan</title>
+    <title>Map | Explore in Japan</title>
     <meta http-equiv="content-type" charset="utf-8">
     <link rel="stylesheet" href="main.css" type="text/css">
     <link rel="stylesheet" href="map.css" type="text/css">
@@ -30,9 +30,8 @@
 
 
             <div id="map">
-                <!--<div id="maptitle">
-                <p>Japan Map</p>
-</div>-->
+
+
 
                 <div id="map_element">
                     <img src="material/0-4.png" id="national" class="Map_size">
@@ -97,13 +96,16 @@
             </div>
             <div id="left">
                 <div class="region_menu" id="region_list_title">
-                    <label for="region_list_title" id="menu_title">Region&Pref. List</label>
-                    <label for="label_Hokkaido" class="pref_accordion" onmouseover="regi_hover(1)" onmouseout="regi_hover_out(1)">Hokkaido</label>
+                    <div id="pref_title">
+                        <div for="region_list_title" id="menu_title">Region &amp;</div>
+                        <div id="preflisttitle">Pref. List</div>
+                    </div>
+                    <label for="label_Hokkaido" id="labels_Hokkaido" class="pref_accordion" onmouseover="regi_hover(1)" onmouseout="regi_hover_out(1)">Hokkaido</label>
                     <input type="checkbox" name="checkbox" id="label_Hokkaido">
                     <ul id="Pref_set_Hokkaido" class="Pref_set">
                         <li id="1_Hokkaido" class="Lmenu_Pref_name" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">Hokkaido</li>
                     </ul>
-                    <label for="label_Tohoku" class="pref_accordion" onmouseover="regi_hover(2)" onmouseout="regi_hover_out(2)">Tohoku</label>
+                    <label for="label_Tohoku" id="labels_Tohoku" class="pref_accordion" onmouseover="regi_hover(2)" onmouseout="regi_hover_out(2)">Tohoku</label>
                     <input type="checkbox" name="checkbox" id="label_Tohoku">
                     <ul id="Pref_set_Tohoku" class="Pref_set">
                         <li id="2_Aomori" class="Lmenu_Pref_name" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">Aomori</li>
@@ -114,7 +116,7 @@
                         <li id="7_Fukushima" class="Lmenu_Pref_name" onmouseover="Pre_hover(7)" onmouseout="Pre_hover_out(7)">Fukushima</li>
                     </ul>
 
-                    <label for="label_Kanto" class="pref_accordion" onmouseover="regi_hover(3)" onmouseout="regi_hover_out(3)">Kanto</label>
+                    <label for="label_Kanto" id="labels_Kanto" class="pref_accordion" onmouseover="regi_hover(3)" onmouseout="regi_hover_out(3)">Kanto</label>
                     <input type="checkbox" name="checkbox" id="label_Kanto">
                     <ul id="Pref_set_Kanto" class="Pref_set">
                         <li id="8_Ibaraki" class="Lmenu_Pref_name" onmouseover="Pre_hover(8)" onmouseout="Pre_hover_out(8)">Ibaraki</li>
@@ -125,7 +127,7 @@
                         <li id="13_Tokyo" class="Lmenu_Pref_name" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">Tokyo</li>
                         <li id="14_Kanagawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(14)" onmouseout="Pre_hover_out(14)">Kanagawa</li>
                     </ul>
-                    <label for="label_Tyubu" class="pref_accordion" onmouseover="regi_hover(4)" onmouseout="regi_hover_out(4)">Tyubu</label>
+                    <label for="label_Tyubu" id="labels_Tyubu" class="pref_accordion" onmouseover="regi_hover(4)" onmouseout="regi_hover_out(4)">Tyubu</label>
                     <input type="checkbox" name="checkbox" id="label_Tyubu">
                     <ul id="Pref_set_Tyubu" class="Pref_set">
                         <li id="15_Niigata" class="Lmenu_Pref_name" onmouseover="Pre_hover(15)" onmouseout="Pre_hover_out(15)">Niigata</li>
@@ -138,7 +140,7 @@
                         <li id="22_Shizuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(22)" onmouseout="Pre_hover_out(22)">Shizuoka</li>
                         <li id="23_Aichi" class="Lmenu_Pref_name" onmouseover="Pre_hover(23)" onmouseout="Pre_hover_out(23)">Aichi</li>
                     </ul>
-                    <label for="label_Kinki" class="pref_accordion" onmouseover="regi_hover(5)" onmouseout="regi_hover_out(5)">Kinki</label>
+                    <label for="label_Kinki" id="labels_Kinki" class="pref_accordion" onmouseover="regi_hover(5)" onmouseout="regi_hover_out(5)">Kinki</label>
                     <input type="checkbox" name="checkbox" id="label_Kinki">
                     <ul id="Pref_set_Kinki" class="Pref_set">
                         <li id="24_Mie" class="Lmenu_Pref_name" onmouseover="Pre_hover(24)" onmouseout="Pre_hover_out(24)">mie</li>
@@ -149,7 +151,7 @@
                         <li id="29_Nara" class="Lmenu_Pref_name" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">Nara</li>
                         <li id="30_wakayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">Wakayama</li>
                     </ul>
-                    <label for="label_Tyugoku" class="pref_accordion" onmouseover="regi_hover(6)" onmouseout="regi_hover_out(6)">Tyugoku</label>
+                    <label for="label_Tyugoku" id="labels_Tyugoku" class="pref_accordion" onmouseover="regi_hover(6)" onmouseout="regi_hover_out(6)">Tyugoku</label>
                     <input type="checkbox" name="checkbox" id="label_Tyugoku">
                     <ul id="Pref_set_Tyugoku" class="Pref_set">
                         <li id="31_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">Tottori</li>
@@ -158,7 +160,7 @@
                         <li id="34_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">Kyoto</li>
                         <li id="35_Yamaguchi" class="Lmenu_Pref_name" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">Yamaguchi</li>
                     </ul>
-                    <label for="label_Shikoku" class="pref_accordion" onmouseover="regi_hover(7)" onmouseout="regi_hover_out(7)">Shikoku</label>
+                    <label for="label_Shikoku" id="labels_Shikoku" class="pref_accordion" onmouseover="regi_hover(7)" onmouseout="regi_hover_out(7)">Shikoku</label>
                     <input type="checkbox" name="checkbox" id="label_Shikoku">
                     <ul id="Pref_set_Shikoku" class="Pref_set">
                         <li id="36_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">Tokushima</li>
@@ -166,7 +168,7 @@
                         <li id="38_Okayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">Ehime</li>
                         <li id="39_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">Kochi</li>
                     </ul>
-                    <label for="label_Kyushu" class="pref_accordion" onmouseover="regi_hover(8)" onmouseout="regi_hover_out(8)">Kyushu</label>
+                    <label for="label_Kyushu" id="labels_Kyusyu" class="pref_accordion" onmouseover="regi_hover(8)" onmouseout="regi_hover_out(8)">Kyushu</label>
                     <input type="checkbox" name="checkbox" id="label_Kyushu">
                     <ul id="Pref_set_Kyushu" class="Pref_set">
                         <li id="40_Fukuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">Fukuoka</li>
@@ -183,7 +185,16 @@
                 </div>
             </div>
             <div id="right">
-                <div id="JapanTime"></div>
+                <div id="JapanTime">
+                    <label for="JapanTime" id="JPtime">
+                        <h1>Japan Time</h1>
+                        <p id="TZ">Asia/Tokyo</p>
+                    </label>
+                    <p id="JTime">00:00:00</p>
+                    <p id="JDate">00/00/0000</p>
+
+                    <p id="TDif">00:00:00</p>
+                </div>
             </div>
 
         </div>
@@ -191,6 +202,4 @@
             <p></p>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
