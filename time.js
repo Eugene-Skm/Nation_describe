@@ -1,5 +1,7 @@
 function trigger() {
+
     setInterval("JPtime()", 1000);
+
 }
 
 function JPtime() {
@@ -8,17 +10,30 @@ function JPtime() {
         timeZone: 'Asia/Tokyo',
         hour12: false
     });
-    console.log("A")
+
     Show(dt);
 }
+var time;
+var flg = 0;
 
 function Show(dat) {
-    var date1 = new Date();
     kekka = dat.split(",");
     time = kekka[1];
     day = kekka[0];
     document.getElementById("JTime").innerHTML = time;
     document.getElementById("JDate").innerHTML = day;
+
+    if (flg == 0) {
+        getTD();
+        flg = 999;
+    }
+
+
+}
+
+function getTD() {
+
+    var date1 = new Date();
     var Udt = date1.toLocaleString('en-US', {
         hour12: false
     });

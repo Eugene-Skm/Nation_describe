@@ -168,11 +168,12 @@ a {
 #left,
 #right {
     position: absolute;
-    height: auto;
+    height: 100%;
     min-height: 86%;
     background-color: #fefefe;
 
     padding-top: 10px;
+
 
 }
 
@@ -181,6 +182,7 @@ a {
     width: 300px;
     border-right: 1px solid #eeeeee;
     padding-top: 10px;
+    z-index: 990;
 }
 
 #right {
@@ -258,12 +260,45 @@ a {
 #label_Tyubu:checked ~ #Pref_set_Tyubu li {
     max-height: 46px;
     opacity: 1;
+    transition: all 1s;
 }
 
 
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~End県名一覧~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+#left_res_menu {
+    display: inline-flex;
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    max-width: 0px;
+    overflow-x: hidden;
+    height: 50px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+    background: #ffffff;
+
+}
+
+#lefts_res_menu {
+    display: none;
+    width: 10px;
+}
+
+
+.hmb_parts {
+    width: 35px;
+    border: 2px solid;
+    margin: 4px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*------------------------------右サイドバー内部コンテンツ------------------------------*/
 
@@ -319,6 +354,73 @@ a {
 
 @media screen and (max-width: 1000px) {}
 
+@media screen and (max-width: 950px) {
+
+    #left {
+        visibility: hidden;
+        overflow-x: hidden;
+        max-width: 0px;
+        top: 90px;
+        background-color: #fefefebb;
+    }
+
+    #left_res_menu {
+        top: 90px;
+        width: 60px;
+        max-width: 60px;
+        overflow-x: visible;
+        z-index: 998;
+    }
+
+    #lefts_res_menu:checked ~ #left {
+        max-width: 200px;
+        overflow-x: visible;
+        visibility: visible;
+        transition: ease 0.8s;
+    }
+
+    #lefts_res_menu:checked ~ #left_res_menu {
+        left: 200px;
+        transition: ease 0.8s;
+    }
+
+    #lefts_res_menu:not(:checked) ~ #left {
+        max-width: 00px;
+        overflow-x: hidden;
+        visibility: hidden;
+        transition: ease 0.8s;
+    }
+
+    #lefts_res_menu:not(:checked) ~ #left_res_menu {
+        left: 00px;
+        transition: ease 0.8s;
+    }
+
+    #right {
+        position: relative;
+        right: auto;
+        width: 100%;
+        height: auto;
+        /*background-color: aqua;*/
+        padding-top: 0px;
+        border-top: 1px solid #cccccc;
+        background-color: #fbfbfb;
+    }
+
+    #JapanTime {
+        border: 0px;
+        text-align: left;
+    }
+
+    .region_menu ul {
+        background-color: #f9f9f999;
+    }
+
+    #topcontent {
+        display: inline-block;
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     /*ヘッダメニューのレスポンシブ化（アコーディオン）*/
@@ -326,7 +428,7 @@ a {
         width: 100%;
         display: inline-flex;
         flex-direction: column;
-        position: absolute;
+        position: relative;
         left: 0px;
         z-index: 999;
         background: #fffc;
@@ -340,6 +442,7 @@ a {
         overflow-y: hidden;
         max-height: 0px;
         width: 100%;
+        transition: all 1s;
     }
 
     .Hmenu_res {
@@ -358,6 +461,13 @@ a {
         opacity: 1;
         transition: all 1s;
     }
+
+    #Hmenu_res:not(:checked) ~ .Hmenu_contents {
+        max-height: 0px;
+        opacity: 0;
+        transition: all 1s;
+    }
+
 
     /*End　ヘッダメニューのレスポンシブ化（ドロップダウン） */
 
@@ -401,4 +511,26 @@ label[id^="labels"]::before {
 
 #main {
     margin-top: 90px;
+}
+
+.info_box {
+    position: relative;
+    display: inline-flex;
+
+}
+
+#Overview {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.info_type::after {
+    content: " : ";
+}
+
+#Detail {
+
+    word-break: break-all;
 }

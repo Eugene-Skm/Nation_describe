@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="map.css" type="text/css">
     <script type="text/javascript" src="map.js" charset="utf-8"></script>
     <script type="text/javascript" src="time.js" charset="utf-8"></script>
+    <script type="text/javascript" src="operate.js" charset="utf-8"></script>
 </head>
 
 <body onload="trigger()">
@@ -94,6 +95,13 @@
 
                 </div>
             </div>
+            <input type="checkbox" name="check" id="lefts_res_menu">
+            <div id="left_res_menu" for="lefts_res_menu" onclick="check('lefts_res_menu')">
+                <div class="hmb_parts"></div>
+                <div class="hmb_parts"></div>
+                <div class="hmb_parts"></div>
+            </div>
+
             <div id="left">
                 <div class="region_menu" id="region_list_title">
                     <div id="pref_title">
@@ -184,6 +192,7 @@
 
                 </div>
             </div>
+
             <div id="right">
                 <div id="JapanTime">
                     <label for="JapanTime" id="JPtime">
@@ -195,6 +204,32 @@
 
                     <p id="TDif">00:00:00</p>
                 </div>
+                <div id="Overview">
+                    <label for="OverView">
+                        <h2>Information</h2>
+                    </label>
+                    <div id="name" class="info_box">
+                        <label for="name" class="info_type">Name</label>
+                        <div id="content">
+                            <div class="in_En">Japan</div>
+                            <div class="in_Jp">日本</div>
+                        </div>
+                    </div>
+                    <div id="Cap＿name" class="info_box">
+                        <label for="name" class="info_type">Capital</label>
+                        <div id="content">
+                            <div class="in_En">Tokyo</div>
+                            <div class="in_Jp">東京</div>
+                        </div>
+                    </div>
+                    <div id="outline">
+                        <label for="outline">Summery</label>
+                        <div id="Detail">
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -202,4 +237,6 @@
             <p></p>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>

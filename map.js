@@ -1,26 +1,7 @@
 function Pre_hover(id) {
     document.getElementById("pref" + id).style.visibility = "visible";
 
-    var date = new Date();
-    console.log(date.toLocaleString());
-    console.log(date.toLocaleString('en-US', {
-        timeZone: 'America/New_York'
-    }));
-    console.log(date.toLocaleString('en-GB', {
-        timeZone: 'Europe/London'
-    }));
-    console.log(date.toLocaleString('en-GB', {
-        timeZone: 'Asia/Tokyo'
-    }));
-    console.log(date.toLocaleString('en-GB', {
-        timeZone: 'Africa/Johannesburg'
-    }));
-    console.log(date.toLocaleString('en-GB', {
-        timeZone: 'Asia/Calcutta'
-    }));
-    console.log(date.toLocaleString('en-GB', {
-        timeZone: 'Etc/UTC'
-    }));
+
 }
 
 function Pre_hover_out(id) {
