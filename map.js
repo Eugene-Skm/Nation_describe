@@ -59,13 +59,13 @@ function getJSON() {
         if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
 
             var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
-            /*var len = data.length; // JSON のデータ数を取得
-
-            // JSON のデータ数分処理
-            for (var i = 0; i < len; i++) {
-                console.log("id: " + data[i].id + ", name: " + data[i].name);
-            }*/
-            console.log(data);
+            var len = data.region[1].prefecture.length; // JSON のデータ数を取得
+            /*
+                        // JSON のデータ数分処理
+                        for (var i = 0; i < len; i++) {
+                            console.log("id: " + data[i].id + ", name: " + data[i].name);
+                        }*/
+            console.log(data.region[1].prefecture[0].nameJP);
 
         }
     };
