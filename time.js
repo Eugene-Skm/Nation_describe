@@ -1,7 +1,7 @@
 function trigger() {
 
     setInterval("JPtime()", 1000);
-
+    getJSON();
 }
 
 function JPtime() {
@@ -30,6 +30,7 @@ function Show(dat) {
 
 
 }
+
 
 function getTD() {
 

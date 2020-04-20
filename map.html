@@ -9,6 +9,8 @@
     <script type="text/javascript" src="map.js" charset="utf-8"></script>
     <script type="text/javascript" src="time.js" charset="utf-8"></script>
     <script type="text/javascript" src="operate.js" charset="utf-8"></script>
+
+
 </head>
 
 <body onload="trigger()">
@@ -83,7 +85,26 @@
                     <img src="material/45-2.png" id="pref45" class="Map_size pref_images">
                     <img src="material/46-2.png" id="pref46" class="Map_size pref_images">
                     <img src="material/47-2.png" id="pref47" class="Map_size pref_images">
+                    <img src="material/0-5.png" id="pref_name_line" class="Map_size">
+                    <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
+                        <p>Tokyo</p>
+                    </div>
                     <div id="pref_labels" class="Map_size">
+                        <div id="Hokkaido" class="pref_label" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">
+                            <p>Hokkaido</p>
+                        </div>
+                        <div id="Aomori" class="pref_label" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">
+                            <p>Aomori</p>
+                        </div>
+                        <div id="Iwate" class="pref_label" onmouseover="Pre_hover(3)" onmouseout="Pre_hover_out(3)">
+                            <p>Iwate</p>
+                        </div>
+                        <div id="Miyagi" class="pref_label" onmouseover="Pre_hover(4)" onmouseout="Pre_hover_out(4)">
+                            <p>Miyagi</p>
+                        </div>
+                        <div id="Akita" class="pref_label" onmouseover="Pre_hover(5)" onmouseout="Pre_hover_out(5)">
+                            <p>Akita</p>
+                        </div>
                         <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
                             <p>Tokyo</p>
                         </div>
@@ -210,20 +231,20 @@
                     </label>
                     <div id="name" class="info_box">
                         <label for="name" class="info_type">Name</label>
-                        <div id="content">
+                        <div class="content">
                             <div class="in_En">Japan</div>
                             <div class="in_Jp">日本</div>
                         </div>
                     </div>
                     <div id="Cap＿name" class="info_box">
                         <label for="name" class="info_type">Capital</label>
-                        <div id="content">
+                        <div class="content">
                             <div class="in_En">Tokyo</div>
                             <div class="in_Jp">東京</div>
                         </div>
                     </div>
                     <div id="outline">
-                        <label for="outline">Summery</label>
+                        <label for="outline" id="Summery_title">Summery</label>
                         <div id="Detail">
                             aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         </div>

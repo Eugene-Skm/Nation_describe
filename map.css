@@ -55,14 +55,16 @@
 
 
 #Tokyo {
-    top: 52%;
-    left: 77%;
+    position: absolute;
+    top:58.5%;
+    left: 88%;
     transform: translate(-50%, -50%);
 }
 
 #Kyoto {
-    top: 56%;
-    left: 51%;
+    position: absolute;
+    top: 44%;
+    left: 49%;
     transform: translate(-50%, -50%);
 }
 
@@ -110,4 +112,41 @@
 
 #national {
     filter: contrast(60%);
+}
+
+#Aomori {
+    position: absolute;
+    top: 11%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+}
+
+#Hokkaido {
+    
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+}
+
+#Miyagi {
+    position: absolute;
+    top: 33%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+}
+
+#Iwate {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+#Akita {
+     position: absolute;
+    top: 19%;
+    left: 71%;
+    transform: translate(-50%, -50%);
 }

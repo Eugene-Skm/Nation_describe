@@ -1,7 +1,7 @@
 :root {}
 
 html {
-    width: 100%;
+    width: auto;
     height: auto;
     box-sizing: border-box;
     font-size: 1.5vmin;
@@ -10,11 +10,16 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: auto;
     height: auto;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p {
@@ -186,6 +191,7 @@ a {
 }
 
 #right {
+
     right: 0px;
     width: 400px;
     border-left: 1px solid #eeeeee;
@@ -306,6 +312,7 @@ a {
 #JapanTime {
     display: inline-block;
     width: 80%;
+    max-width: 300px;
     padding: 5px;
     padding-right: 15px;
     text-align: right;
@@ -338,7 +345,7 @@ a {
 /*===========================レスポンシブ===============================*/
 @media screen and (max-width: 1500px) {
     #right {
-        width: 300px;
+        width: 250px;
     }
 
     #left {
@@ -398,13 +405,15 @@ a {
 
     #right {
         position: relative;
-        right: auto;
+        display: inline-flex;
         width: 100%;
         height: auto;
         /*background-color: aqua;*/
         padding-top: 0px;
         border-top: 1px solid #cccccc;
         background-color: #fbfbfb;
+
+        margin: 5px;
     }
 
     #JapanTime {
@@ -514,9 +523,9 @@ label[id^="labels"]::before {
 }
 
 .info_box {
+
     position: relative;
     display: inline-flex;
-
 }
 
 #Overview {
@@ -524,13 +533,43 @@ label[id^="labels"]::before {
     display: inline-flex;
     flex-direction: column;
     margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.in_Jp {
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .info_type::after {
-    content: " : ";
+    white-space: pre-wrap;
+    content: "  :  ";
 }
 
 #Detail {
 
     word-break: break-all;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+
+
+.content {
+    display: inline-flex;
+
+}
+
+#outline {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+
+}
+
+#Summery_title {
+    text-align: left;
 }

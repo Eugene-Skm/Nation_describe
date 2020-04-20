@@ -49,3 +49,26 @@ function regi_hover_out(id) {
         document.getElementById("pref" + Dataset[i]).style.visibility = "hidden";
     }
 }
+
+
+
+
+function getJSON() {
+    var req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
+    req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+        if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+
+            var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
+            /*var len = data.length; // JSON のデータ数を取得
+
+            // JSON のデータ数分処理
+            for (var i = 0; i < len; i++) {
+                console.log("id: " + data[i].id + ", name: " + data[i].name);
+            }*/
+            console.log(data);
+
+        }
+    };
+    req.open("GET", "JPinform.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
+    req.send(); // 実際にサーバーへリクエストを送信
+}
