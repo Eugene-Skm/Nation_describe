@@ -550,9 +550,11 @@ label[id^="labels"]::before {
 
 #Detail {
 
-    word-break: break-all;
-    font-size: 14px;
+    word-break:normal;
+    font-size: 16px;
     margin-top: 5px;
+    line-height: 1.5;
+    text-align: left;
 }
 
 
@@ -571,5 +573,8 @@ label[id^="labels"]::before {
 }
 
 #Summery_title {
+    margin-top: 10px;
     text-align: left;
 }
+
+

@@ -1,6 +1,14 @@
+var Rlist = [""];
+var Plist = [""];
+
 function Pre_hover(id) {
     document.getElementById("pref" + id).style.visibility = "visible";
-
+    document.getElementById("name_en").innerHTML = Plist[id].name;
+    document.getElementById("name_jp").innerHTML = Plist[id].nameJP;
+    document.getElementById("cap_en").innerHTML = Plist[id].capital;
+    document.getElementById("cap_jp").innerHTML = Plist[id].capitalJP;
+    document.getElementById("cat_en").innerHTML = Plist[id].category;
+    document.getElementById("Detail").innerHTML = Plist[id].introduction;
 
 }
 
@@ -38,6 +46,12 @@ function regi_hover(id) {
             Dataset = [40, 41, 42, 43, 44, 45, 46, 47];
             break;
     }
+    document.getElementById("name_en").innerHTML = Rlist[id].name;
+    document.getElementById("name_jp").innerHTML = Rlist[id].nameJP;
+    document.getElementById("cap_en").innerHTML = "";
+    document.getElementById("cap_jp").innerHTML = "";
+    document.getElementById("cat_en").innerHTML = Rlist[id].category;
+    document.getElementById("Detail").innerHTML = Rlist[id].introduction;
 
     for (var i = 0; i < Dataset.length; i++) {
         document.getElementById("pref" + Dataset[i]).style.visibility = "visible";
@@ -59,16 +73,34 @@ function getJSON() {
         if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
 
             var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
-            var len = data.region[1].prefecture.length; // JSON のデータ数を取得
+
             /*
                         // JSON のデータ数分処理
                         for (var i = 0; i < len; i++) {
                             console.log("id: " + data[i].id + ", name: " + data[i].name);
                         }*/
             console.log(data.region[1].prefecture[0].nameJP);
+            JsonChange(data);
 
         }
     };
     req.open("GET", "JPinform.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
     req.send(); // 実際にサーバーへリクエストを送信
+}
+
+function JsonChange(datas) {
+
+    var lenR = datas.region.length; // JSON のデータ数を取得
+    console.log(lenR);
+    for (i = 0; i < lenR; i++) {
+        Rlist.push(datas.region[i])
+        var lenP = datas.region[i].prefecture.length; // JSON のデータ数を取得
+        for (x = 0; x < lenP; x++) {
+            Plist.push(datas.region[i].prefecture[x])
+        }
+
+    }
+    console.log(Rlist)
+    console.log(Plist)
+    console.log()
 }
