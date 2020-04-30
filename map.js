@@ -1,20 +1,40 @@
-var Rlist = [""];
-var Plist = [""];
+var Rlist = [];
+var Plist = [];
 
 function Pre_hover(id) {
-    document.getElementById("pref" + id).style.visibility = "visible";
-    document.getElementById("name_en").innerHTML = Plist[id].name;
-    document.getElementById("name_jp").innerHTML = Plist[id].nameJP;
-    document.getElementById("cap_en").innerHTML = Plist[id].capital;
-    document.getElementById("cap_jp").innerHTML = Plist[id].capitalJP;
-    document.getElementById("cat_en").innerHTML = Plist[id].category;
-    document.getElementById("Detail").innerHTML = Plist[id].introduction;
+    try {
+        document.getElementById("pref" + id).style.visibility = "visible";
+    } catch (e) {
+        var er = e;
+    } finally {
+        document.getElementById("name_en").innerHTML = Plist[id].name;
+        document.getElementById("name_jp").innerHTML = Plist[id].nameJP;
+        document.getElementById("cap_en").innerHTML = Plist[id].capital;
+        document.getElementById("cap_jp").innerHTML = Plist[id].capitalJP;
+        document.getElementById("cat_en").innerHTML = Plist[id].category;
+        document.getElementById("Detail").innerHTML = Plist[id].introduction;
+
+    }
 
 }
 
 function Pre_hover_out(id) {
-    document.getElementById("pref" + id).style.visibility = "hidden";
+    try {
+        document.getElementById("pref" + id).style.visibility = "hidden";
+    } catch (e) {
+        var er = e;
+    }
+
 }
+
+function display_object(ob_id) {
+    if (document.getElementById("switch1").checked) {
+        document.getElementById(ob_id).style.visibility = "visible";
+    } else {
+        document.getElementById(ob_id).style.visibility = "hidden";
+    }
+}
+
 var Dataset = [];
 
 function regi_hover(id) {
@@ -68,39 +88,41 @@ function regi_hover_out(id) {
 
 
 function getJSON() {
-    var req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
-    req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
-        if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
+    try {
 
-            var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
+        var req = new XMLHttpRequest(); // XMLHttpRequest オブジェクトを生成する
+        req.onreadystatechange = function () { // XMLHttpRequest オブジェクトの状態が変化した際に呼び出されるイベントハンドラ
+            if (req.readyState == 4 && req.status == 200) { // サーバーからのレスポンスが完了し、かつ、通信が正常に終了した場合
 
-            /*
-                        // JSON のデータ数分処理
-                        for (var i = 0; i < len; i++) {
-                            console.log("id: " + data[i].id + ", name: " + data[i].name);
-                        }*/
-            console.log(data.region[1].prefecture[0].nameJP);
-            JsonChange(data);
+                var data = JSON.parse(req.responseText); // 取得した JSON ファイルの中身を変数へ格納
 
-        }
-    };
-    req.open("GET", "JPinform.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
-    req.send(); // 実際にサーバーへリクエストを送信
+
+
+                JsonChange(data);
+
+            }
+        };
+        req.open("GET", "JPinform.json", false); // HTTPメソッドとアクセスするサーバーのURLを指定
+        req.send(); // 実際にサーバーへリクエストを送信
+    } catch (e) {
+        var data = jInf;
+        JsonChange(data);
+        console.log("Exception happen");
+    }
 }
 
 function JsonChange(datas) {
+    Plist.push(datas[0])
 
-    var lenR = datas.region.length; // JSON のデータ数を取得
-    console.log(lenR);
+    var lenR = datas[0].region.length; // JSON のデータ数を取得
     for (i = 0; i < lenR; i++) {
-        Rlist.push(datas.region[i])
-        var lenP = datas.region[i].prefecture.length; // JSON のデータ数を取得
+        Rlist.push(datas[0].region[i])
+        var lenP = datas[0].region[i].prefecture.length; // JSON のデータ数を取得
         for (x = 0; x < lenP; x++) {
-            Plist.push(datas.region[i].prefecture[x])
+            Plist.push(datas[0].region[i].prefecture[x])
         }
 
     }
-    console.log(Rlist)
-    console.log(Plist)
-    console.log()
+    Pre_hover(0);
+    Pre_hover_out(0);
 }

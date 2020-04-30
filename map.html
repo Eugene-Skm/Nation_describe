@@ -9,6 +9,8 @@
     <script type="text/javascript" src="map.js" charset="utf-8"></script>
     <script type="text/javascript" src="time.js" charset="utf-8"></script>
     <script type="text/javascript" src="operate.js" charset="utf-8"></script>
+    <script type="text/javascript" src="JPinform-E.js" charset="utf-8"></script>
+    <script src="JPinform.json"></script>
 
 
 </head>
@@ -35,7 +37,11 @@
             <div id="map">
 
 
-
+                <div class="set_switch">
+                    <label for="switch1" id="switch1_l"></label>
+                    <input type="checkbox" id="switch1" onclick="display_object('pref_labels')">
+                    <label for="switch1" id="switch_bt"></label>
+                </div>
                 <div id="map_element">
                     <img src="material/0-4.png" id="national" class="Map_size">
                     <img src="material/1-2.png" id="pref1" class="Map_size pref_images">
@@ -85,11 +91,11 @@
                     <img src="material/45-2.png" id="pref45" class="Map_size pref_images">
                     <img src="material/46-2.png" id="pref46" class="Map_size pref_images">
                     <img src="material/47-2.png" id="pref47" class="Map_size pref_images">
-                    <img src="material/0-5.png" id="pref_name_line" class="Map_size">
-                    <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
-                        <p>Tokyo</p>
-                    </div>
+
+
+
                     <div id="pref_labels" class="Map_size">
+                        <img src="material/0-5.png" id="pref_name_line" class="Map_size">
                         <div id="Hokkaido" class="pref_label" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">
                             <p>Hokkaido</p>
                         </div>
@@ -168,11 +174,68 @@
                         <div id="Kyoto" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
                             <p>Kyoto</p>
                         </div>
-                        <div id="Osaka" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
+                        <div id="Osaka" class="pref_label" onmouseover="Pre_hover(27)" onmouseout="Pre_hover_out(27)">
                             <p>Osaka</p>
                         </div>
-                        <div id="Hyogo" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
+                        <div id="Hyogo" class="pref_label" onmouseover="Pre_hover(28)" onmouseout="Pre_hover_out(28)">
                             <p>Hyogo</p>
+                        </div>
+                        <div id="Nara" class="pref_label" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">
+                            <p>Nara</p>
+                        </div>
+                        <div id="Wakayama" class="pref_label" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">
+                            <p>Wakayama</p>
+                        </div>
+                        <div id="Tottori" class="pref_label" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">
+                            <p>Tottori</p>
+                        </div>
+                        <div id="Shimane" class="pref_label" onmouseover="Pre_hover(32)" onmouseout="Pre_hover_out(32)">
+                            <p>Shimane</p>
+                        </div>
+                        <div id="Okayama" class="pref_label" onmouseover="Pre_hover(33)" onmouseout="Pre_hover_out(33)">
+                            <p>Okayama</p>
+                        </div>
+                        <div id="Hiroshima" class="pref_label" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">
+                            <p>Hiroshima</p>
+                        </div>
+                        <div id="Yamaguchi" class="pref_label" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">
+                            <p>Yamaguchi</p>
+                        </div>
+                        <div id="Tokushima" class="pref_label" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">
+                            <p>Tokushima</p>
+                        </div>
+                        <div id="kagawa" class="pref_label" onmouseover="Pre_hover(37)" onmouseout="Pre_hover_out(37)">
+                            <p>kagawa</p>
+                        </div>
+                        <div id="Ehime" class="pref_label" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">
+                            <p>Ehime</p>
+                        </div>
+                        <div id="Kochi" class="pref_label" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">
+                            <p>Kochi</p>
+                        </div>
+                        <div id="Fukuoka" class="pref_label" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">
+                            <p>Fukuoka</p>
+                        </div>
+                        <div id="Saga" class="pref_label" onmouseover="Pre_hover(41)" onmouseout="Pre_hover_out(41)">
+                            <p>Saga</p>
+                        </div>
+                        <div id="Nagasaki" class="pref_label" onmouseover="Pre_hover(42)" onmouseout="Pre_hover_out(42)">
+                            <p>Nagasaki</p>
+                        </div>
+                        <div id="Kumamoto" class="pref_label" onmouseover="Pre_hover(43)" onmouseout="Pre_hover_out(43)">
+                            <p>Kumamoto</p>
+                        </div>
+                        <div id="Oita" class="pref_label" onmouseover="Pre_hover(44)" onmouseout="Pre_hover_out(44)">
+                            <p>Oita</p>
+                        </div>
+                        <div id="Miyazaki" class="pref_label" onmouseover="Pre_hover(45)" onmouseout="Pre_hover_out(45)">
+                            <p>Miyazaki</p>
+                        </div>
+                        <div id="Kagoshima" class="pref_label" onmouseover="Pre_hover(46)" onmouseout="Pre_hover_out(46)">
+                            <p>Kagoshima</p>
+                        </div>
+                        <div id="Okinawa" class="pref_label" onmouseover="Pre_hover(47)" onmouseout="Pre_hover_out(47)">
+                            <p>Okinawa</p>
                         </div>
 
                     </div>
@@ -329,4 +392,6 @@
             <p></p>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 function trigger() {
-
+    
+    
     setInterval("JPtime()", 1000);
     getJSON();
 }

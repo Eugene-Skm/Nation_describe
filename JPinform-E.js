@@ -1,5 +1,4 @@
-[{
-
+var jInf = [{
         "id": "n01",
         "category": "country",
         "name": "Japan",
@@ -624,6 +623,5 @@
 
     ]
 
-
 }
-]
+];
