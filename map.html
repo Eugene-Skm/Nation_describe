@@ -233,7 +233,7 @@
                         </div>
 
                     </div>
-
+                    <img src="material/Nation_1.png" id="wideNationM" class="Map_size">
                 </div>
             </div>
             <input type="checkbox" name="check" id="lefts_res_menu">
@@ -339,15 +339,36 @@
                         <h2>Map Setting</h2>
                     </label>
                     <div id="setteings">
-                        <div id="switch1set">
-                            <label for="Switch1area" class="switchName">Pref. Name</label>
-                            <div id="Switch1area" class="Toggle">
-                                <input type="checkbox" id="switch1" onclick="display_object('pref_labels')" checked="checked">
-                                <label for="switch1" id="switch1_l" class="dummy_clisker_toggle"></label>
-                                <label for="switch1" id="switch1_bt" class="togg_button"></label>
-                                <div class="set_switch" id="switch1"></div>
+                        <div class="switchset">
+                            <div class="toggleswitch">
+                                <label for="Switch1area" class="switchName">Pref. Name</label>
+                                <div id="Switch1area" class="Toggle">
+                                    <input type="checkbox" id="switch1" onclick="display_Element('switch1','pref_labels')" checked="checked">
+                                    <label for="switch1" id="switch1_l" class="dummy_clisker_toggle"></label>
+                                    <label for="switch1" id="switch1_bt" class="togg_button"></label>
+                                    <div class="set_switch" id="switch1"></div>
+                                </div>
                             </div>
-
+                            <label class="toggledescription">On/Off pref name on the map</label>
+                        </div>
+                    </div>
+                </div>
+                <div id="MapOptionArea">
+                    <label for="MapOptionArea">
+                        <h2>Option</h2>
+                    </label>
+                    <div id="Options">
+                        <div class="switchset">
+                            <div class="toggleswitch">
+                                <label for="Switch1area" class="switchName">Wide Map</label>
+                                <div id="OpSwitch1area" class="Toggle">
+                                    <input type="checkbox" id="Opswitch1" onclick="display_Element('Opswitch1','wideNationM')">
+                                    <label for="Opswitch1" id="Opswitch1_l" class="dummy_clisker_toggle"></label>
+                                    <label for="Opswitch1" id="Opswitch1_bt" class="togg_button"></label>
+                                    <div class="set_switch" id="Opswitch1"></div>
+                                </div>
+                            </div>
+                            <label class="toggledescription">When turn On, No Pref's Highlight</label>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-var Rlist = [];
+var Rlist = [""];
 var Plist = [];
 
 function Pre_hover(id) {
@@ -27,8 +27,8 @@ function Pre_hover_out(id) {
 
 }
 
-function display_object(ob_id) {
-    if (document.getElementById("switch1").checked) {
+function display_Element(in_Ob_id, ob_id) {
+    if (document.getElementById(in_Ob_id).checked) {
         document.getElementById(ob_id).style.visibility = "visible";
     } else {
         document.getElementById(ob_id).style.visibility = "hidden";
@@ -125,4 +125,5 @@ function JsonChange(datas) {
     }
     Pre_hover(0);
     Pre_hover_out(0);
+
 }
