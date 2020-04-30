@@ -36,12 +36,6 @@
 
             <div id="map">
 
-
-                <div class="set_switch">
-                    <label for="switch1" id="switch1_l"></label>
-                    <input type="checkbox" id="switch1" onclick="display_object('pref_labels')">
-                    <label for="switch1" id="switch_bt"></label>
-                </div>
                 <div id="map_element">
                     <img src="material/0-4.png" id="national" class="Map_size">
                     <img src="material/1-2.png" id="pref1" class="Map_size pref_images">
@@ -339,6 +333,24 @@
 
 
                 </div>
+
+                <div id="MapsettingArea">
+                    <label for="MapsettingArea">
+                        <h2>Map Setting</h2>
+                    </label>
+                    <div id="setteings">
+                        <div id="switch1set">
+                            <label for="Switch1area" class="switchName">Pref. Name</label>
+                            <div id="Switch1area" class="Toggle">
+                                <input type="checkbox" id="switch1" onclick="display_object('pref_labels')" checked="checked">
+                                <label for="switch1" id="switch1_l" class="dummy_clisker_toggle"></label>
+                                <label for="switch1" id="switch1_bt" class="togg_button"></label>
+                                <div class="set_switch" id="switch1"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div id="right">
@@ -392,6 +404,4 @@
             <p></p>
         </div>
     </div>
-</body>
-
-</html>
+</body></html>
