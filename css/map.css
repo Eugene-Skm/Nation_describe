@@ -3,7 +3,7 @@
 	--map-size-width: 800px;
 	--map-size-height: 800px;
 }
-
+/*Yes*/
 .Map_size {
 	width: var(--map-size-width);
 	height: var(--map-size-height);
