@@ -1,0 +1,51 @@
+:root {}
+
+html {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 1.5vmin;
+    font-family: "inherit", "Arial", "Helvetica Neue";
+
+}
+
+body {
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 1px;
+}
+
+
+/*------ a link文字色　一律 #000000 -----*/
+a:link {
+    /*未訪問*/
+    color: #000000;
+}
+
+a:visited {
+    /*訪問済み*/
+    color: #000000;
+}
+
+a:hover {
+    /*ポイント時*/
+    color: #000000;
+}
+
+a:active {
+    /*選択中*/
+    color: #000000;
+}
+
+/*------End a link文字色　一律 #000000 -----*/
