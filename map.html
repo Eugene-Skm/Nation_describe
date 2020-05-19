@@ -2,433 +2,433 @@
 <html>
 
 <head>
-    <title>Map | Explore in Japan</title>
-    <meta http-equiv="content-type" charset="utf-8">
-    <link rel="stylesheet" href="css/root.css" type="text/css">
-    <link rel="stylesheet" href="css/map-main.css" type="text/css">
-    <link rel="stylesheet" href="css/header.css" type="text/css">
-    <link rel="stylesheet" href="css/map.css" type="text/css">
-    <script type="text/javascript" src="js/map.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/time.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/operate.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/JPinform-E.js" charset="utf-8"></script>
-    <script src="JPinform.json"></script>
+	<title>Map | Explore in Japan</title>
+	<meta http-equiv="content-type" charset="utf-8">
+	<link rel="stylesheet" href="css/root.css" type="text/css">
+	<link rel="stylesheet" href="css/map-main.css" type="text/css">
+	<link rel="stylesheet" href="css/header.css" type="text/css">
+	<link rel="stylesheet" href="css/map.css" type="text/css">
+	<script type="text/javascript" src="js/map.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/time.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/operate.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/JPinform-E.js" charset="utf-8"></script>
+	<script src="JPinform.json"></script>
 
 
 </head>
 
 <body onload="trigger()">
-    <!--***************ヘッダー　ドロップダウン実現のためIframeは不可***************-->
-    <div id="Main_header">
-        <div id="logo">
-            Explore in Japan
-        </div>
-        <ul id="header_menu">
-            <label for="Hmenu_res" class="Hmenu_res">menu</label>
-            <input type="checkbox" name="checkbox" id="Hmenu_res">
-            <li id="H_menu_con1" class="Hmenu_contents"><a href="index.html">Home</a></li>
-            <li id="H_menu_con2" class="Hmenu_contents"><a href="map.html">Map</a></li>
-            <li id="H_menu_con3" class="Hmenu_contents">Tips</li>
-            <li id="H_menu_con4" class="Hmenu_contents">Spot</li>
-            <li id="H_menu_con5" class="Hmenu_contents">Blog</li>
-        </ul>
-    </div>
-    <!--*****************************ヘッダー　ここまで**************************-->
-    <div id="main">
-        <div id="topcontent">
+	<!--***************ヘッダー　ドロップダウン実現のためIframeは不可***************-->
+	<div id="Main_header">
+		<div id="logo">
+			Explore in Japan
+		</div>
+		<ul id="header_menu">
+			<label for="Hmenu_res" class="Hmenu_res">menu</label>
+			<input type="checkbox" name="checkbox" id="Hmenu_res">
+			<li id="H_menu_con1" class="Hmenu_contents"><a href="index.html">Home</a></li>
+			<li id="H_menu_con2" class="Hmenu_contents"><a href="map.html">Map</a></li>
+			<li id="H_menu_con3" class="Hmenu_contents">Tips</li>
+			<li id="H_menu_con4" class="Hmenu_contents">Spot</li>
+			<li id="H_menu_con5" class="Hmenu_contents">Blog</li>
+		</ul>
+	</div>
+	<!--*****************************ヘッダー　ここまで**************************-->
+	<div id="main">
+		<div id="topcontent">
 
 
-            <div id="map">
+			<div id="map">
 
-                <div id="map_element">
-                    <img src="material/0-4.png" id="national" class="Map_size">
-                    <img src="material/1-2.png" id="pref1" class="Map_size pref_images">
-                    <img src="material/2-2.png" id="pref2" class="Map_size pref_images">
-                    <img src="material/3-2.png" id="pref3" class="Map_size pref_images">
-                    <img src="material/4-2.png" id="pref4" class="Map_size pref_images">
-                    <img src="material/5-2.png" id="pref5" class="Map_size pref_images">
-                    <img src="material/6-2.png" id="pref6" class="Map_size pref_images">
-                    <img src="material/7-2.png" id="pref7" class="Map_size pref_images">
-                    <img src="material/8-2.png" id="pref8" class="Map_size pref_images">
-                    <img src="material/9-2.png" id="pref9" class="Map_size pref_images">
-                    <img src="material/10-2.png" id="pref10" class="Map_size pref_images">
-                    <img src="material/11-2.png" id="pref11" class="Map_size pref_images">
-                    <img src="material/12-2.png" id="pref12" class="Map_size pref_images">
-                    <img src="material/13-2.png" id="pref13" class="Map_size pref_images">
-                    <img src="material/14-2.png" id="pref14" class="Map_size pref_images">
-                    <img src="material/15-2.png" id="pref15" class="Map_size pref_images">
-                    <img src="material/16-2.png" id="pref16" class="Map_size pref_images">
-                    <img src="material/17-2.png" id="pref17" class="Map_size pref_images">
-                    <img src="material/18-2.png" id="pref18" class="Map_size pref_images">
-                    <img src="material/19-2.png" id="pref19" class="Map_size pref_images">
-                    <img src="material/20-2.png" id="pref20" class="Map_size pref_images">
-                    <img src="material/21-2.png" id="pref21" class="Map_size pref_images">
-                    <img src="material/22-2.png" id="pref22" class="Map_size pref_images">
-                    <img src="material/23-2.png" id="pref23" class="Map_size pref_images">
-                    <img src="material/24-2.png" id="pref24" class="Map_size pref_images">
-                    <img src="material/25-2.png" id="pref25" class="Map_size pref_images">
-                    <img src="material/26-2.png" id="pref26" class="Map_size pref_images">
-                    <img src="material/27-2.png" id="pref27" class="Map_size pref_images">
-                    <img src="material/28-2.png" id="pref28" class="Map_size pref_images">
-                    <img src="material/29-2.png" id="pref29" class="Map_size pref_images">
-                    <img src="material/30-2.png" id="pref30" class="Map_size pref_images">
-                    <img src="material/31-2.png" id="pref31" class="Map_size pref_images">
-                    <img src="material/32-2.png" id="pref32" class="Map_size pref_images">
-                    <img src="material/33-2.png" id="pref33" class="Map_size pref_images">
-                    <img src="material/34-2.png" id="pref34" class="Map_size pref_images">
-                    <img src="material/35-2.png" id="pref35" class="Map_size pref_images">
-                    <img src="material/36-2.png" id="pref36" class="Map_size pref_images">
-                    <img src="material/37-2.png" id="pref37" class="Map_size pref_images">
-                    <img src="material/38-2.png" id="pref38" class="Map_size pref_images">
-                    <img src="material/39-2.png" id="pref39" class="Map_size pref_images">
-                    <img src="material/40-2.png" id="pref40" class="Map_size pref_images">
-                    <img src="material/41-2.png" id="pref41" class="Map_size pref_images">
-                    <img src="material/42-2.png" id="pref42" class="Map_size pref_images">
-                    <img src="material/43-2.png" id="pref43" class="Map_size pref_images">
-                    <img src="material/44-2.png" id="pref44" class="Map_size pref_images">
-                    <img src="material/45-2.png" id="pref45" class="Map_size pref_images">
-                    <img src="material/46-2.png" id="pref46" class="Map_size pref_images">
-                    <img src="material/47-2.png" id="pref47" class="Map_size pref_images">
-
-
-
-                    <div id="pref_labels" class="Map_size">
-                        <img src="material/0-5.png" id="pref_name_line" class="Map_size">
-                        <div id="Hokkaido" class="pref_label" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">
-                            <p>Hokkaido</p>
-                        </div>
-                        <div id="Aomori" class="pref_label" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">
-                            <p>Aomori</p>
-                        </div>
-                        <div id="Iwate" class="pref_label" onmouseover="Pre_hover(3)" onmouseout="Pre_hover_out(3)">
-                            <p>Iwate</p>
-                        </div>
-                        <div id="Miyagi" class="pref_label" onmouseover="Pre_hover(4)" onmouseout="Pre_hover_out(4)">
-                            <p>Miyagi</p>
-                        </div>
-                        <div id="Akita" class="pref_label" onmouseover="Pre_hover(5)" onmouseout="Pre_hover_out(5)">
-                            <p>Akita</p>
-                        </div>
-                        <div id="yamagata" class="pref_label" onmouseover="Pre_hover(6)" onmouseout="Pre_hover_out(6)">
-                            <p>Yamagata</p>
-                        </div>
-                        <div id="Fukushima" class="pref_label" onmouseover="Pre_hover(7)" onmouseout="Pre_hover_out(7)">
-                            <p>Fukushima</p>
-                        </div>
-                        <div id="Ibaraki" class="pref_label" onmouseover="Pre_hover(8)" onmouseout="Pre_hover_out(8)">
-                            <p>Ibaraki</p>
-                        </div>
-                        <div id="Tochigi" class="pref_label" onmouseover="Pre_hover(9)" onmouseout="Pre_hover_out(9)">
-                            <p>Tochigi</p>
-                        </div>
-                        <div id="Gunma" class="pref_label" onmouseover="Pre_hover(10)" onmouseout="Pre_hover_out(10)">
-                            <p>Gunma</p>
-                        </div>
-                        <div id="Saitama" class="pref_label" onmouseover="Pre_hover(11)" onmouseout="Pre_hover_out(11)">
-                            <p>Saitama</p>
-                        </div>
-                        <div id="Chiba" class="pref_label" onmouseover="Pre_hover(12)" onmouseout="Pre_hover_out(12)">
-                            <p>Chiba</p>
-                        </div>
-                        <div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
-                            <p>Tokyo</p>
-                        </div>
-                        <div id="Kanagawa" class="pref_label" onmouseover="Pre_hover(14)" onmouseout="Pre_hover_out(14)">
-                            <p>kanagawa</p>
-                        </div>
-                        <div id="niigata" class="pref_label" onmouseover="Pre_hover(15)" onmouseout="Pre_hover_out(15)">
-                            <p>Niigata</p>
-                        </div>
-                        <div id="Toyama" class="pref_label" onmouseover="Pre_hover(16)" onmouseout="Pre_hover_out(16)">
-                            <p>Toyama</p>
-                        </div>
-                        <div id="Ishikawa" class="pref_label" onmouseover="Pre_hover(17)" onmouseout="Pre_hover_out(17)">
-                            <p>Ishikawa</p>
-                        </div>
-                        <div id="Fukui" class="pref_label" onmouseover="Pre_hover(18)" onmouseout="Pre_hover_out(18)">
-                            <p>Fukui</p>
-                        </div>
-                        <div id="Yamanashi" class="pref_label" onmouseover="Pre_hover(19)" onmouseout="Pre_hover_out(19)">
-                            <p>Yamanashi</p>
-                        </div>
-                        <div id="Nagano" class="pref_label" onmouseover="Pre_hover(20)" onmouseout="Pre_hover_out(20)">
-                            <p>Nagano</p>
-                        </div>
-                        <div id="Gifu" class="pref_label" onmouseover="Pre_hover(21)" onmouseout="Pre_hover_out(21)">
-                            <p>Gifu</p>
-                        </div>
-                        <div id="Shizuoka" class="pref_label" onmouseover="Pre_hover(22)" onmouseout="Pre_hover_out(22)">
-                            <p>Shizuoka</p>
-                        </div>
-                        <div id="Aichi" class="pref_label" onmouseover="Pre_hover(23)" onmouseout="Pre_hover_out(23)">
-                            <p>Aichi</p>
-                        </div>
-                        <div id="Mie" class="pref_label" onmouseover="Pre_hover(24)" onmouseout="Pre_hover_out(24)">
-                            <p>Mie</p>
-                        </div>
-                        <div id="Shiga" class="pref_label" onmouseover="Pre_hover(25)" onmouseout="Pre_hover_out(25)">
-                            <p>Shiga</p>
-                        </div>
-                        <div id="Kyoto" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
-                            <p>Kyoto</p>
-                        </div>
-                        <div id="Osaka" class="pref_label" onmouseover="Pre_hover(27)" onmouseout="Pre_hover_out(27)">
-                            <p>Osaka</p>
-                        </div>
-                        <div id="Hyogo" class="pref_label" onmouseover="Pre_hover(28)" onmouseout="Pre_hover_out(28)">
-                            <p>Hyogo</p>
-                        </div>
-                        <div id="Nara" class="pref_label" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">
-                            <p>Nara</p>
-                        </div>
-                        <div id="Wakayama" class="pref_label" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">
-                            <p>Wakayama</p>
-                        </div>
-                        <div id="Tottori" class="pref_label" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">
-                            <p>Tottori</p>
-                        </div>
-                        <div id="Shimane" class="pref_label" onmouseover="Pre_hover(32)" onmouseout="Pre_hover_out(32)">
-                            <p>Shimane</p>
-                        </div>
-                        <div id="Okayama" class="pref_label" onmouseover="Pre_hover(33)" onmouseout="Pre_hover_out(33)">
-                            <p>Okayama</p>
-                        </div>
-                        <div id="Hiroshima" class="pref_label" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">
-                            <p>Hiroshima</p>
-                        </div>
-                        <div id="Yamaguchi" class="pref_label" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">
-                            <p>Yamaguchi</p>
-                        </div>
-                        <div id="Tokushima" class="pref_label" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">
-                            <p>Tokushima</p>
-                        </div>
-                        <div id="kagawa" class="pref_label" onmouseover="Pre_hover(37)" onmouseout="Pre_hover_out(37)">
-                            <p>kagawa</p>
-                        </div>
-                        <div id="Ehime" class="pref_label" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">
-                            <p>Ehime</p>
-                        </div>
-                        <div id="Kochi" class="pref_label" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">
-                            <p>Kochi</p>
-                        </div>
-                        <div id="Fukuoka" class="pref_label" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">
-                            <p>Fukuoka</p>
-                        </div>
-                        <div id="Saga" class="pref_label" onmouseover="Pre_hover(41)" onmouseout="Pre_hover_out(41)">
-                            <p>Saga</p>
-                        </div>
-                        <div id="Nagasaki" class="pref_label" onmouseover="Pre_hover(42)" onmouseout="Pre_hover_out(42)">
-                            <p>Nagasaki</p>
-                        </div>
-                        <div id="Kumamoto" class="pref_label" onmouseover="Pre_hover(43)" onmouseout="Pre_hover_out(43)">
-                            <p>Kumamoto</p>
-                        </div>
-                        <div id="Oita" class="pref_label" onmouseover="Pre_hover(44)" onmouseout="Pre_hover_out(44)">
-                            <p>Oita</p>
-                        </div>
-                        <div id="Miyazaki" class="pref_label" onmouseover="Pre_hover(45)" onmouseout="Pre_hover_out(45)">
-                            <p>Miyazaki</p>
-                        </div>
-                        <div id="Kagoshima" class="pref_label" onmouseover="Pre_hover(46)" onmouseout="Pre_hover_out(46)">
-                            <p>Kagoshima</p>
-                        </div>
-                        <div id="Okinawa" class="pref_label" onmouseover="Pre_hover(47)" onmouseout="Pre_hover_out(47)">
-                            <p>Okinawa</p>
-                        </div>
-
-                    </div>
-                    <img src="material/Nation_1.png" id="wideNationM" class="Map_size">
-                </div>
-            </div>
-            <input type="checkbox" name="check" id="lefts_res_menu">
-            <div id="left_res_menu" for="lefts_res_menu" onclick="check('lefts_res_menu')">
-                <div class="hmb_parts"></div>
-                <div class="hmb_parts"></div>
-                <div class="hmb_parts"></div>
-            </div>
-
-            <div id="left">
-                <div class="region_menu" id="region_list_title">
-                    <div id="pref_title">
-                        <div for="region_list_title" id="menu_title">Region &amp;</div>
-                        <div id="preflisttitle">Pref. List</div>
-                    </div>
-
-                    <label for="label_Hokkaido" id="labels_Hokkaido" class="pref_accordion" onmouseover="regi_hover(1)" onmouseout="regi_hover_out(1)">Hokkaido</label>
-                    <input type="checkbox" name="checkbox" id="label_Hokkaido">
-                    <ul id="Pref_set_Hokkaido" class="Pref_set">
-                        <li id="1_Hokkaido" class="Lmenu_Pref_name" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">Hokkaido</li>
-                    </ul>
-                    <label for="label_Tohoku" id="labels_Tohoku" class="pref_accordion" onmouseover="regi_hover(2)" onmouseout="regi_hover_out(2)">Tohoku</label>
-                    <input type="checkbox" name="checkbox" id="label_Tohoku">
-                    <ul id="Pref_set_Tohoku" class="Pref_set">
-                        <li id="2_Aomori" class="Lmenu_Pref_name" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">Aomori</li>
-                        <li id="3_Iwate" class="Lmenu_Pref_name" onmouseover="Pre_hover(3)" onmouseout="Pre_hover_out(3)">Iwate</li>
-                        <li id="4_Miyagi" class="Lmenu_Pref_name" onmouseover="Pre_hover(4)" onmouseout="Pre_hover_out(4)">Miyagi</li>
-                        <li id="5_Akita" class="Lmenu_Pref_name" onmouseover="Pre_hover(5)" onmouseout="Pre_hover_out(5)">Akita</li>
-                        <li id="6_Yamagata" class="Lmenu_Pref_name" onmouseover="Pre_hover(6)" onmouseout="Pre_hover_out(6)">Yamagata</li>
-                        <li id="7_Fukushima" class="Lmenu_Pref_name" onmouseover="Pre_hover(7)" onmouseout="Pre_hover_out(7)">Fukushima</li>
-                    </ul>
-
-                    <label for="label_Kanto" id="labels_Kanto" class="pref_accordion" onmouseover="regi_hover(3)" onmouseout="regi_hover_out(3)">Kanto</label>
-                    <input type="checkbox" name="checkbox" id="label_Kanto">
-                    <ul id="Pref_set_Kanto" class="Pref_set">
-                        <li id="8_Ibaraki" class="Lmenu_Pref_name" onmouseover="Pre_hover(8)" onmouseout="Pre_hover_out(8)">Ibaraki</li>
-                        <li id="9_Tochigi" class="Lmenu_Pref_name" onmouseover="Pre_hover(9)" onmouseout="Pre_hover_out(9)">Tochigi</li>
-                        <li id="10_Gunma" class="Lmenu_Pref_name" onmouseover="Pre_hover(10)" onmouseout="Pre_hover_out(10)">Gunma</li>
-                        <li id="11_Saitama" class="Lmenu_Pref_name" onmouseover="Pre_hover(11)" onmouseout="Pre_hover_out(11)">Saitama</li>
-                        <li id="12_Chiba" class="Lmenu_Pref_name" onmouseover="Pre_hover(12)" onmouseout="Pre_hover_out(12)">Chiba</li>
-                        <li id="13_Tokyo" class="Lmenu_Pref_name" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">Tokyo</li>
-                        <li id="14_Kanagawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(14)" onmouseout="Pre_hover_out(14)">Kanagawa</li>
-                    </ul>
-                    <label for="label_Tyubu" id="labels_Tyubu" class="pref_accordion" onmouseover="regi_hover(4)" onmouseout="regi_hover_out(4)">Tyubu</label>
-                    <input type="checkbox" name="checkbox" id="label_Tyubu">
-                    <ul id="Pref_set_Tyubu" class="Pref_set">
-                        <li id="15_Niigata" class="Lmenu_Pref_name" onmouseover="Pre_hover(15)" onmouseout="Pre_hover_out(15)">Niigata</li>
-                        <li id="16_Toyama" class="Lmenu_Pref_name" onmouseover="Pre_hover(16)" onmouseout="Pre_hover_out(16)">Toyama</li>
-                        <li id="17_Ishikawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(17)" onmouseout="Pre_hover_out(17)">Ishikawa</li>
-                        <li id="18_Fukui" class="Lmenu_Pref_name" onmouseover="Pre_hover(18)" onmouseout="Pre_hover_out(18)">Fukui</li>
-                        <li id="19_Yamanashi" class="Lmenu_Pref_name" onmouseover="Pre_hover(19)" onmouseout="Pre_hover_out(19)">Yamanashi</li>
-                        <li id="20_Nagano" class="Lmenu_Pref_name" onmouseover="Pre_hover(20)" onmouseout="Pre_hover_out(20)">Nagano</li>
-                        <li id="21_Gifu" class="Lmenu_Pref_name" onmouseover="Pre_hover(21)" onmouseout="Pre_hover_out(21)">Gifu</li>
-                        <li id="22_Shizuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(22)" onmouseout="Pre_hover_out(22)">Shizuoka</li>
-                        <li id="23_Aichi" class="Lmenu_Pref_name" onmouseover="Pre_hover(23)" onmouseout="Pre_hover_out(23)">Aichi</li>
-                    </ul>
-                    <label for="label_Kinki" id="labels_Kinki" class="pref_accordion" onmouseover="regi_hover(5)" onmouseout="regi_hover_out(5)">Kinki</label>
-                    <input type="checkbox" name="checkbox" id="label_Kinki">
-                    <ul id="Pref_set_Kinki" class="Pref_set">
-                        <li id="24_Mie" class="Lmenu_Pref_name" onmouseover="Pre_hover(24)" onmouseout="Pre_hover_out(24)">mie</li>
-                        <li id="25_Shiga" class="Lmenu_Pref_name" onmouseover="Pre_hover(25)" onmouseout="Pre_hover_out(25)">Shiga</li>
-                        <li id="26_Kyoto" class="Lmenu_Pref_name" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">Kyoto</li>
-                        <li id="27_Osaka" class="Lmenu_Pref_name" onmouseover="Pre_hover(27)" onmouseout="Pre_hover_out(27)">Osaka</li>
-                        <li id="28_Hyogo" class="Lmenu_Pref_name" onmouseover="Pre_hover(28)" onmouseout="Pre_hover_out(28)">Hyogo</li>
-                        <li id="29_Nara" class="Lmenu_Pref_name" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">Nara</li>
-                        <li id="30_wakayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">Wakayama</li>
-                    </ul>
-                    <label for="label_Tyugoku" id="labels_Tyugoku" class="pref_accordion" onmouseover="regi_hover(6)" onmouseout="regi_hover_out(6)">Tyugoku</label>
-                    <input type="checkbox" name="checkbox" id="label_Tyugoku">
-                    <ul id="Pref_set_Tyugoku" class="Pref_set">
-                        <li id="31_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">Tottori</li>
-                        <li id="33_Shimane" class="Lmenu_Pref_name" onmouseover="Pre_hover(32)" onmouseout="Pre_hover_out(32)">Shimane</li>
-                        <li id="33_Okayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(33)" onmouseout="Pre_hover_out(33)">Okayama</li>
-                        <li id="34_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">Kyoto</li>
-                        <li id="35_Yamaguchi" class="Lmenu_Pref_name" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">Yamaguchi</li>
-                    </ul>
-                    <label for="label_Shikoku" id="labels_Shikoku" class="pref_accordion" onmouseover="regi_hover(7)" onmouseout="regi_hover_out(7)">Shikoku</label>
-                    <input type="checkbox" name="checkbox" id="label_Shikoku">
-                    <ul id="Pref_set_Shikoku" class="Pref_set">
-                        <li id="36_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">Tokushima</li>
-                        <li id="37_Shimane" class="Lmenu_Pref_name" onmouseover="Pre_hover(37)" onmouseout="Pre_hover_out(37)">Kagawa</li>
-                        <li id="38_Okayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">Ehime</li>
-                        <li id="39_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">Kochi</li>
-                    </ul>
-                    <label for="label_Kyushu" id="labels_Kyusyu" class="pref_accordion" onmouseover="regi_hover(8)" onmouseout="regi_hover_out(8)">Kyushu</label>
-                    <input type="checkbox" name="checkbox" id="label_Kyushu">
-                    <ul id="Pref_set_Kyushu" class="Pref_set">
-                        <li id="40_Fukuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">Fukuoka</li>
-                        <li id="41_Saga" class="Lmenu_Pref_name" onmouseover="Pre_hover(41)" onmouseout="Pre_hover_out(41)">Saga</li>
-                        <li id="42_Nagasaki" class="Lmenu_Pref_name" onmouseover="Pre_hover(42)" onmouseout="Pre_hover_out(42)">Nagasaki</li>
-                        <li id="43_Kumamoto" class="Lmenu_Pref_name" onmouseover="Pre_hover(43)" onmouseout="Pre_hover_out(43)">Kumamoto</li>
-                        <li id="44_Oita" class="Lmenu_Pref_name" onmouseover="Pre_hover(44)" onmouseout="Pre_hover_out(44)">Oita</li>
-                        <li id="45_Miyazaki" class="Lmenu_Pref_name" onmouseover="Pre_hover(45)" onmouseout="Pre_hover_out(45)">Miyazaki</li>
-                        <li id="46_Kagoshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(46)" onmouseout="Pre_hover_out(46)">kagoshima</li>
-                        <li id="47_Okinawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(47)" onmouseout="Pre_hover_out(47)">Okinawa</li>
-                    </ul>
+				<div id="map_element">
+					<img src="material/0-4.png" id="national" class="Map_size">
+					<img src="material/1-2.png" id="pref1" class="Map_size pref_images">
+					<img src="material/2-2.png" id="pref2" class="Map_size pref_images">
+					<img src="material/3-2.png" id="pref3" class="Map_size pref_images">
+					<img src="material/4-2.png" id="pref4" class="Map_size pref_images">
+					<img src="material/5-2.png" id="pref5" class="Map_size pref_images">
+					<img src="material/6-2.png" id="pref6" class="Map_size pref_images">
+					<img src="material/7-2.png" id="pref7" class="Map_size pref_images">
+					<img src="material/8-2.png" id="pref8" class="Map_size pref_images">
+					<img src="material/9-2.png" id="pref9" class="Map_size pref_images">
+					<img src="material/10-2.png" id="pref10" class="Map_size pref_images">
+					<img src="material/11-2.png" id="pref11" class="Map_size pref_images">
+					<img src="material/12-2.png" id="pref12" class="Map_size pref_images">
+					<img src="material/13-2.png" id="pref13" class="Map_size pref_images">
+					<img src="material/14-2.png" id="pref14" class="Map_size pref_images">
+					<img src="material/15-2.png" id="pref15" class="Map_size pref_images">
+					<img src="material/16-2.png" id="pref16" class="Map_size pref_images">
+					<img src="material/17-2.png" id="pref17" class="Map_size pref_images">
+					<img src="material/18-2.png" id="pref18" class="Map_size pref_images">
+					<img src="material/19-2.png" id="pref19" class="Map_size pref_images">
+					<img src="material/20-2.png" id="pref20" class="Map_size pref_images">
+					<img src="material/21-2.png" id="pref21" class="Map_size pref_images">
+					<img src="material/22-2.png" id="pref22" class="Map_size pref_images">
+					<img src="material/23-2.png" id="pref23" class="Map_size pref_images">
+					<img src="material/24-2.png" id="pref24" class="Map_size pref_images">
+					<img src="material/25-2.png" id="pref25" class="Map_size pref_images">
+					<img src="material/26-2.png" id="pref26" class="Map_size pref_images">
+					<img src="material/27-2.png" id="pref27" class="Map_size pref_images">
+					<img src="material/28-2.png" id="pref28" class="Map_size pref_images">
+					<img src="material/29-2.png" id="pref29" class="Map_size pref_images">
+					<img src="material/30-2.png" id="pref30" class="Map_size pref_images">
+					<img src="material/31-2.png" id="pref31" class="Map_size pref_images">
+					<img src="material/32-2.png" id="pref32" class="Map_size pref_images">
+					<img src="material/33-2.png" id="pref33" class="Map_size pref_images">
+					<img src="material/34-2.png" id="pref34" class="Map_size pref_images">
+					<img src="material/35-2.png" id="pref35" class="Map_size pref_images">
+					<img src="material/36-2.png" id="pref36" class="Map_size pref_images">
+					<img src="material/37-2.png" id="pref37" class="Map_size pref_images">
+					<img src="material/38-2.png" id="pref38" class="Map_size pref_images">
+					<img src="material/39-2.png" id="pref39" class="Map_size pref_images">
+					<img src="material/40-2.png" id="pref40" class="Map_size pref_images">
+					<img src="material/41-2.png" id="pref41" class="Map_size pref_images">
+					<img src="material/42-2.png" id="pref42" class="Map_size pref_images">
+					<img src="material/43-2.png" id="pref43" class="Map_size pref_images">
+					<img src="material/44-2.png" id="pref44" class="Map_size pref_images">
+					<img src="material/45-2.png" id="pref45" class="Map_size pref_images">
+					<img src="material/46-2.png" id="pref46" class="Map_size pref_images">
+					<img src="material/47-2.png" id="pref47" class="Map_size pref_images">
 
 
-                </div>
 
-                <div id="MapsettingArea">
-                    <label for="MapsettingArea">
-                        <h2>Map Setting</h2>
-                    </label>
-                    <div id="setteings">
-                        <div class="switchset">
-                            <div class="toggleswitch">
-                                <label for="Switch1area" class="switchName">Pref. Name</label>
-                                <div id="Switch1area" class="Toggle">
-                                    <input type="checkbox" id="switch1" onclick="display_Element('switch1','pref_labels')" checked="checked">
-                                    <label for="switch1" id="switch1_l" class="dummy_clisker_toggle"></label>
-                                    <label for="switch1" id="switch1_bt" class="togg_button"></label>
-                                    <div class="set_switch" id="switch1"></div>
-                                </div>
-                            </div>
-                            <label class="toggledescription">On/Off pref name on the map</label>
-                        </div>
-                    </div>
-                </div>
-                <div id="MapOptionArea">
-                    <label for="MapOptionArea">
-                        <h2>Option</h2>
-                    </label>
-                    <div id="Options">
-                        <div class="switchset">
-                            <div class="toggleswitch">
-                                <label for="Switch1area" class="switchName">Wide Map</label>
-                                <div id="OpSwitch1area" class="Toggle">
-                                    <input type="checkbox" id="Opswitch1" onclick="display_Element('Opswitch1','wideNationM')">
-                                    <label for="Opswitch1" id="Opswitch1_l" class="dummy_clisker_toggle"></label>
-                                    <label for="Opswitch1" id="Opswitch1_bt" class="togg_button"></label>
-                                    <div class="set_switch" id="Opswitch1"></div>
-                                </div>
-                            </div>
-                            <label class="toggledescription">When turn On, No Pref's Highlight</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
+					<div id="pref_labels" class="Map_size">
+						<img src="material/0-5.png" id="pref_name_line" class="Map_size">
+						<div id="Hokkaido" class="pref_label" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">
+							<p>Hokkaido</p>
+						</div>
+						<div id="Aomori" class="pref_label" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">
+							<p>Aomori</p>
+						</div>
+						<div id="Iwate" class="pref_label" onmouseover="Pre_hover(3)" onmouseout="Pre_hover_out(3)">
+							<p>Iwate</p>
+						</div>
+						<div id="Miyagi" class="pref_label" onmouseover="Pre_hover(4)" onmouseout="Pre_hover_out(4)">
+							<p>Miyagi</p>
+						</div>
+						<div id="Akita" class="pref_label" onmouseover="Pre_hover(5)" onmouseout="Pre_hover_out(5)">
+							<p>Akita</p>
+						</div>
+						<div id="yamagata" class="pref_label" onmouseover="Pre_hover(6)" onmouseout="Pre_hover_out(6)">
+							<p>Yamagata</p>
+						</div>
+						<div id="Fukushima" class="pref_label" onmouseover="Pre_hover(7)" onmouseout="Pre_hover_out(7)">
+							<p>Fukushima</p>
+						</div>
+						<div id="Ibaraki" class="pref_label" onmouseover="Pre_hover(8)" onmouseout="Pre_hover_out(8)">
+							<p>Ibaraki</p>
+						</div>
+						<div id="Tochigi" class="pref_label" onmouseover="Pre_hover(9)" onmouseout="Pre_hover_out(9)">
+							<p>Tochigi</p>
+						</div>
+						<div id="Gunma" class="pref_label" onmouseover="Pre_hover(10)" onmouseout="Pre_hover_out(10)">
+							<p>Gunma</p>
+						</div>
+						<div id="Saitama" class="pref_label" onmouseover="Pre_hover(11)" onmouseout="Pre_hover_out(11)">
+							<p>Saitama</p>
+						</div>
+						<div id="Chiba" class="pref_label" onmouseover="Pre_hover(12)" onmouseout="Pre_hover_out(12)">
+							<p>Chiba</p>
+						</div>
+						<div id="Tokyo" class="pref_label" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">
+							<p>Tokyo</p>
+						</div>
+						<div id="Kanagawa" class="pref_label" onmouseover="Pre_hover(14)" onmouseout="Pre_hover_out(14)">
+							<p>kanagawa</p>
+						</div>
+						<div id="niigata" class="pref_label" onmouseover="Pre_hover(15)" onmouseout="Pre_hover_out(15)">
+							<p>Niigata</p>
+						</div>
+						<div id="Toyama" class="pref_label" onmouseover="Pre_hover(16)" onmouseout="Pre_hover_out(16)">
+							<p>Toyama</p>
+						</div>
+						<div id="Ishikawa" class="pref_label" onmouseover="Pre_hover(17)" onmouseout="Pre_hover_out(17)">
+							<p>Ishikawa</p>
+						</div>
+						<div id="Fukui" class="pref_label" onmouseover="Pre_hover(18)" onmouseout="Pre_hover_out(18)">
+							<p>Fukui</p>
+						</div>
+						<div id="Yamanashi" class="pref_label" onmouseover="Pre_hover(19)" onmouseout="Pre_hover_out(19)">
+							<p>Yamanashi</p>
+						</div>
+						<div id="Nagano" class="pref_label" onmouseover="Pre_hover(20)" onmouseout="Pre_hover_out(20)">
+							<p>Nagano</p>
+						</div>
+						<div id="Gifu" class="pref_label" onmouseover="Pre_hover(21)" onmouseout="Pre_hover_out(21)">
+							<p>Gifu</p>
+						</div>
+						<div id="Shizuoka" class="pref_label" onmouseover="Pre_hover(22)" onmouseout="Pre_hover_out(22)">
+							<p>Shizuoka</p>
+						</div>
+						<div id="Aichi" class="pref_label" onmouseover="Pre_hover(23)" onmouseout="Pre_hover_out(23)">
+							<p>Aichi</p>
+						</div>
+						<div id="Mie" class="pref_label" onmouseover="Pre_hover(24)" onmouseout="Pre_hover_out(24)">
+							<p>Mie</p>
+						</div>
+						<div id="Shiga" class="pref_label" onmouseover="Pre_hover(25)" onmouseout="Pre_hover_out(25)">
+							<p>Shiga</p>
+						</div>
+						<div id="Kyoto" class="pref_label" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">
+							<p>Kyoto</p>
+						</div>
+						<div id="Osaka" class="pref_label" onmouseover="Pre_hover(27)" onmouseout="Pre_hover_out(27)">
+							<p>Osaka</p>
+						</div>
+						<div id="Hyogo" class="pref_label" onmouseover="Pre_hover(28)" onmouseout="Pre_hover_out(28)">
+							<p>Hyogo</p>
+						</div>
+						<div id="Nara" class="pref_label" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">
+							<p>Nara</p>
+						</div>
+						<div id="Wakayama" class="pref_label" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">
+							<p>Wakayama</p>
+						</div>
+						<div id="Tottori" class="pref_label" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">
+							<p>Tottori</p>
+						</div>
+						<div id="Shimane" class="pref_label" onmouseover="Pre_hover(32)" onmouseout="Pre_hover_out(32)">
+							<p>Shimane</p>
+						</div>
+						<div id="Okayama" class="pref_label" onmouseover="Pre_hover(33)" onmouseout="Pre_hover_out(33)">
+							<p>Okayama</p>
+						</div>
+						<div id="Hiroshima" class="pref_label" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">
+							<p>Hiroshima</p>
+						</div>
+						<div id="Yamaguchi" class="pref_label" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">
+							<p>Yamaguchi</p>
+						</div>
+						<div id="Tokushima" class="pref_label" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">
+							<p>Tokushima</p>
+						</div>
+						<div id="kagawa" class="pref_label" onmouseover="Pre_hover(37)" onmouseout="Pre_hover_out(37)">
+							<p>kagawa</p>
+						</div>
+						<div id="Ehime" class="pref_label" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">
+							<p>Ehime</p>
+						</div>
+						<div id="Kochi" class="pref_label" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">
+							<p>Kochi</p>
+						</div>
+						<div id="Fukuoka" class="pref_label" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">
+							<p>Fukuoka</p>
+						</div>
+						<div id="Saga" class="pref_label" onmouseover="Pre_hover(41)" onmouseout="Pre_hover_out(41)">
+							<p>Saga</p>
+						</div>
+						<div id="Nagasaki" class="pref_label" onmouseover="Pre_hover(42)" onmouseout="Pre_hover_out(42)">
+							<p>Nagasaki</p>
+						</div>
+						<div id="Kumamoto" class="pref_label" onmouseover="Pre_hover(43)" onmouseout="Pre_hover_out(43)">
+							<p>Kumamoto</p>
+						</div>
+						<div id="Oita" class="pref_label" onmouseover="Pre_hover(44)" onmouseout="Pre_hover_out(44)">
+							<p>Oita</p>
+						</div>
+						<div id="Miyazaki" class="pref_label" onmouseover="Pre_hover(45)" onmouseout="Pre_hover_out(45)">
+							<p>Miyazaki</p>
+						</div>
+						<div id="Kagoshima" class="pref_label" onmouseover="Pre_hover(46)" onmouseout="Pre_hover_out(46)">
+							<p>Kagoshima</p>
+						</div>
+						<div id="Okinawa" class="pref_label" onmouseover="Pre_hover(47)" onmouseout="Pre_hover_out(47)">
+							<p>Okinawa</p>
+						</div>
 
-            <div id="right">
-                <div id="JapanTime">
-                    <label for="JapanTime" id="JPtime">
-                        <h1>Japan Time</h1>
-                        <p id="TZ">Asia/Tokyo</p>
-                    </label>
-                    <p id="JTime">00:00:00</p>
-                    <p id="JDate">00/00/0000</p>
+					</div>
+					<img src="material/Nation_1.png" id="wideNationM" class="Map_size">
+				</div>
+			</div>
+			<input type="checkbox" name="check" id="lefts_res_menu">
+			<div id="left_res_menu" for="lefts_res_menu" onclick="check('lefts_res_menu')">
+				<div class="hmb_parts"></div>
+				<div class="hmb_parts"></div>
+				<div class="hmb_parts"></div>
+			</div>
 
-                    <p id="TDif">00:00:00</p>
-                </div>
-                <div id="Overview">
-                    <label for="OverView">
-                        <h2>Information</h2>
-                    </label>
-                    <div id="Category" class="info_box">
-                        <label for="name" class="info_type">Category</label>
-                        <div class="content">
-                            <div class="in_En" id="cat_en">Nation</div>
-                        </div>
-                    </div>
-                    <div id="name" class="info_box">
-                        <label for="name" class="info_type">Name</label>
-                        <div class="content">
-                            <div class="in_En" id="name_en">Japan</div>
-                            <div class="in_Jp" id="name_jp">日本</div>
-                        </div>
-                    </div>
+			<div id="left">
+				<div class="region_menu" id="region_list_title">
+					<div id="pref_title">
+						<div for="region_list_title" id="menu_title">Region &amp;</div>
+						<div id="preflisttitle">Pref. List</div>
+					</div>
 
-                    <div id="Cap＿name" class="info_box">
-                        <label for="name" class="info_type">Capital</label>
-                        <div class="content">
-                            <div class="in_En" id="cap_en">Tokyo</div>
-                            <div class="in_Jp" id="cap_jp">東京</div>
-                        </div>
-                    </div>
-                    <div id="outline">
-                        <label for="outline" id="Summery_title">Summery</label>
-                        <div id="Detail">
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                        </div>
+					<label for="label_Hokkaido" id="labels_Hokkaido" class="pref_accordion" onmouseover="regi_hover(1)" onmouseout="regi_hover_out(1)">Hokkaido</label>
+					<input type="checkbox" name="checkbox" id="label_Hokkaido">
+					<ul id="Pref_set_Hokkaido" class="Pref_set">
+						<li id="1_Hokkaido" class="Lmenu_Pref_name" onmouseover="Pre_hover(1)" onmouseout="Pre_hover_out(1)">Hokkaido</li>
+					</ul>
+					<label for="label_Tohoku" id="labels_Tohoku" class="pref_accordion" onmouseover="regi_hover(2)" onmouseout="regi_hover_out(2)">Tohoku</label>
+					<input type="checkbox" name="checkbox" id="label_Tohoku">
+					<ul id="Pref_set_Tohoku" class="Pref_set">
+						<li id="2_Aomori" class="Lmenu_Pref_name" onmouseover="Pre_hover(2)" onmouseout="Pre_hover_out(2)">Aomori</li>
+						<li id="3_Iwate" class="Lmenu_Pref_name" onmouseover="Pre_hover(3)" onmouseout="Pre_hover_out(3)">Iwate</li>
+						<li id="4_Miyagi" class="Lmenu_Pref_name" onmouseover="Pre_hover(4)" onmouseout="Pre_hover_out(4)">Miyagi</li>
+						<li id="5_Akita" class="Lmenu_Pref_name" onmouseover="Pre_hover(5)" onmouseout="Pre_hover_out(5)">Akita</li>
+						<li id="6_Yamagata" class="Lmenu_Pref_name" onmouseover="Pre_hover(6)" onmouseout="Pre_hover_out(6)">Yamagata</li>
+						<li id="7_Fukushima" class="Lmenu_Pref_name" onmouseover="Pre_hover(7)" onmouseout="Pre_hover_out(7)">Fukushima</li>
+					</ul>
 
-                    </div>
-                </div>
-            </div>
+					<label for="label_Kanto" id="labels_Kanto" class="pref_accordion" onmouseover="regi_hover(3)" onmouseout="regi_hover_out(3)">Kanto</label>
+					<input type="checkbox" name="checkbox" id="label_Kanto">
+					<ul id="Pref_set_Kanto" class="Pref_set">
+						<li id="8_Ibaraki" class="Lmenu_Pref_name" onmouseover="Pre_hover(8)" onmouseout="Pre_hover_out(8)">Ibaraki</li>
+						<li id="9_Tochigi" class="Lmenu_Pref_name" onmouseover="Pre_hover(9)" onmouseout="Pre_hover_out(9)">Tochigi</li>
+						<li id="10_Gunma" class="Lmenu_Pref_name" onmouseover="Pre_hover(10)" onmouseout="Pre_hover_out(10)">Gunma</li>
+						<li id="11_Saitama" class="Lmenu_Pref_name" onmouseover="Pre_hover(11)" onmouseout="Pre_hover_out(11)">Saitama</li>
+						<li id="12_Chiba" class="Lmenu_Pref_name" onmouseover="Pre_hover(12)" onmouseout="Pre_hover_out(12)">Chiba</li>
+						<li id="13_Tokyo" class="Lmenu_Pref_name" onmouseover="Pre_hover(13)" onmouseout="Pre_hover_out(13)">Tokyo</li>
+						<li id="14_Kanagawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(14)" onmouseout="Pre_hover_out(14)">Kanagawa</li>
+					</ul>
+					<label for="label_Tyubu" id="labels_Tyubu" class="pref_accordion" onmouseover="regi_hover(4)" onmouseout="regi_hover_out(4)">Tyubu</label>
+					<input type="checkbox" name="checkbox" id="label_Tyubu">
+					<ul id="Pref_set_Tyubu" class="Pref_set">
+						<li id="15_Niigata" class="Lmenu_Pref_name" onmouseover="Pre_hover(15)" onmouseout="Pre_hover_out(15)">Niigata</li>
+						<li id="16_Toyama" class="Lmenu_Pref_name" onmouseover="Pre_hover(16)" onmouseout="Pre_hover_out(16)">Toyama</li>
+						<li id="17_Ishikawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(17)" onmouseout="Pre_hover_out(17)">Ishikawa</li>
+						<li id="18_Fukui" class="Lmenu_Pref_name" onmouseover="Pre_hover(18)" onmouseout="Pre_hover_out(18)">Fukui</li>
+						<li id="19_Yamanashi" class="Lmenu_Pref_name" onmouseover="Pre_hover(19)" onmouseout="Pre_hover_out(19)">Yamanashi</li>
+						<li id="20_Nagano" class="Lmenu_Pref_name" onmouseover="Pre_hover(20)" onmouseout="Pre_hover_out(20)">Nagano</li>
+						<li id="21_Gifu" class="Lmenu_Pref_name" onmouseover="Pre_hover(21)" onmouseout="Pre_hover_out(21)">Gifu</li>
+						<li id="22_Shizuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(22)" onmouseout="Pre_hover_out(22)">Shizuoka</li>
+						<li id="23_Aichi" class="Lmenu_Pref_name" onmouseover="Pre_hover(23)" onmouseout="Pre_hover_out(23)">Aichi</li>
+					</ul>
+					<label for="label_Kinki" id="labels_Kinki" class="pref_accordion" onmouseover="regi_hover(5)" onmouseout="regi_hover_out(5)">Kinki</label>
+					<input type="checkbox" name="checkbox" id="label_Kinki">
+					<ul id="Pref_set_Kinki" class="Pref_set">
+						<li id="24_Mie" class="Lmenu_Pref_name" onmouseover="Pre_hover(24)" onmouseout="Pre_hover_out(24)">mie</li>
+						<li id="25_Shiga" class="Lmenu_Pref_name" onmouseover="Pre_hover(25)" onmouseout="Pre_hover_out(25)">Shiga</li>
+						<li id="26_Kyoto" class="Lmenu_Pref_name" onmouseover="Pre_hover(26)" onmouseout="Pre_hover_out(26)">Kyoto</li>
+						<li id="27_Osaka" class="Lmenu_Pref_name" onmouseover="Pre_hover(27)" onmouseout="Pre_hover_out(27)">Osaka</li>
+						<li id="28_Hyogo" class="Lmenu_Pref_name" onmouseover="Pre_hover(28)" onmouseout="Pre_hover_out(28)">Hyogo</li>
+						<li id="29_Nara" class="Lmenu_Pref_name" onmouseover="Pre_hover(29)" onmouseout="Pre_hover_out(29)">Nara</li>
+						<li id="30_wakayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(30)" onmouseout="Pre_hover_out(30)">Wakayama</li>
+					</ul>
+					<label for="label_Tyugoku" id="labels_Tyugoku" class="pref_accordion" onmouseover="regi_hover(6)" onmouseout="regi_hover_out(6)">Tyugoku</label>
+					<input type="checkbox" name="checkbox" id="label_Tyugoku">
+					<ul id="Pref_set_Tyugoku" class="Pref_set">
+						<li id="31_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(31)" onmouseout="Pre_hover_out(31)">Tottori</li>
+						<li id="33_Shimane" class="Lmenu_Pref_name" onmouseover="Pre_hover(32)" onmouseout="Pre_hover_out(32)">Shimane</li>
+						<li id="33_Okayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(33)" onmouseout="Pre_hover_out(33)">Okayama</li>
+						<li id="34_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(34)" onmouseout="Pre_hover_out(34)">Kyoto</li>
+						<li id="35_Yamaguchi" class="Lmenu_Pref_name" onmouseover="Pre_hover(35)" onmouseout="Pre_hover_out(35)">Yamaguchi</li>
+					</ul>
+					<label for="label_Shikoku" id="labels_Shikoku" class="pref_accordion" onmouseover="regi_hover(7)" onmouseout="regi_hover_out(7)">Shikoku</label>
+					<input type="checkbox" name="checkbox" id="label_Shikoku">
+					<ul id="Pref_set_Shikoku" class="Pref_set">
+						<li id="36_Tottori" class="Lmenu_Pref_name" onmouseover="Pre_hover(36)" onmouseout="Pre_hover_out(36)">Tokushima</li>
+						<li id="37_Shimane" class="Lmenu_Pref_name" onmouseover="Pre_hover(37)" onmouseout="Pre_hover_out(37)">Kagawa</li>
+						<li id="38_Okayama" class="Lmenu_Pref_name" onmouseover="Pre_hover(38)" onmouseout="Pre_hover_out(38)">Ehime</li>
+						<li id="39_Hiroshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(39)" onmouseout="Pre_hover_out(39)">Kochi</li>
+					</ul>
+					<label for="label_Kyushu" id="labels_Kyusyu" class="pref_accordion" onmouseover="regi_hover(8)" onmouseout="regi_hover_out(8)">Kyushu</label>
+					<input type="checkbox" name="checkbox" id="label_Kyushu">
+					<ul id="Pref_set_Kyushu" class="Pref_set">
+						<li id="40_Fukuoka" class="Lmenu_Pref_name" onmouseover="Pre_hover(40)" onmouseout="Pre_hover_out(40)">Fukuoka</li>
+						<li id="41_Saga" class="Lmenu_Pref_name" onmouseover="Pre_hover(41)" onmouseout="Pre_hover_out(41)">Saga</li>
+						<li id="42_Nagasaki" class="Lmenu_Pref_name" onmouseover="Pre_hover(42)" onmouseout="Pre_hover_out(42)">Nagasaki</li>
+						<li id="43_Kumamoto" class="Lmenu_Pref_name" onmouseover="Pre_hover(43)" onmouseout="Pre_hover_out(43)">Kumamoto</li>
+						<li id="44_Oita" class="Lmenu_Pref_name" onmouseover="Pre_hover(44)" onmouseout="Pre_hover_out(44)">Oita</li>
+						<li id="45_Miyazaki" class="Lmenu_Pref_name" onmouseover="Pre_hover(45)" onmouseout="Pre_hover_out(45)">Miyazaki</li>
+						<li id="46_Kagoshima" class="Lmenu_Pref_name" onmouseover="Pre_hover(46)" onmouseout="Pre_hover_out(46)">kagoshima</li>
+						<li id="47_Okinawa" class="Lmenu_Pref_name" onmouseover="Pre_hover(47)" onmouseout="Pre_hover_out(47)">Okinawa</li>
+					</ul>
 
-        </div>
-        <div id="scroll_introduction">
-            <p></p>
-        </div>
-    </div>
+
+				</div>
+
+				<div id="MapsettingArea">
+					<label for="MapsettingArea">
+						<h2>Map Setting</h2>
+					</label>
+					<div id="setteings">
+						<div class="switchset">
+							<div class="toggleswitch">
+								<label for="Switch1area" class="switchName">Pref. Name</label>
+								<div id="Switch1area" class="Toggle">
+									<input type="checkbox" id="switch1" onclick="display_Element('switch1','pref_labels')" checked="checked">
+									<label for="switch1" id="switch1_l" class="dummy_clisker_toggle"></label>
+									<label for="switch1" id="switch1_bt" class="togg_button"></label>
+									<div class="set_switch" id="switch1"></div>
+								</div>
+							</div>
+							<label class="toggledescription">On/Off pref name on the map</label>
+						</div>
+					</div>
+				</div>
+				<div id="MapOptionArea">
+					<label for="MapOptionArea">
+						<h2>Option</h2>
+					</label>
+					<div id="Options">
+						<div class="switchset">
+							<div class="toggleswitch">
+								<label for="Switch1area" class="switchName">Wide Map</label>
+								<div id="OpSwitch1area" class="Toggle">
+									<input type="checkbox" id="Opswitch1" onclick="display_Element('Opswitch1','wideNationM')">
+									<label for="Opswitch1" id="Opswitch1_l" class="dummy_clisker_toggle"></label>
+									<label for="Opswitch1" id="Opswitch1_bt" class="togg_button"></label>
+									<div class="set_switch" id="Opswitch1"></div>
+								</div>
+							</div>
+							<label class="toggledescription">When turn On, No Pref's Highlight</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="right">
+				<div id="JapanTime">
+					<label for="JapanTime" id="JPtime">
+						<h1>Japan Time</h1>
+						<p id="TZ">Asia/Tokyo</p>
+					</label>
+					<p id="JTime">00:00:00</p>
+					<p id="JDate">00/00/0000</p>
+
+					<p id="TDif">00:00:00</p>
+				</div>
+				<div id="Overview">
+					<label for="OverView">
+						<h2>Information</h2>
+					</label>
+					<div id="Category" class="info_box">
+						<label for="name" class="info_type">Category</label>
+						<div class="content">
+							<div class="in_En" id="cat_en">Nation</div>
+						</div>
+					</div>
+					<div id="name" class="info_box">
+						<label for="name" class="info_type">Name</label>
+						<div class="content">
+							<div class="in_En" id="name_en">Japan</div>
+							<div class="in_Jp" id="name_jp">日本</div>
+						</div>
+					</div>
+
+					<div id="Cap＿name" class="info_box">
+						<label for="name" class="info_type">Capital</label>
+						<div class="content">
+							<div class="in_En" id="cap_en">Tokyo</div>
+							<div class="in_Jp" id="cap_jp">東京</div>
+						</div>
+					</div>
+					<div id="outline">
+						<label for="outline" id="Summery_title">Summery</label>
+						<div id="Detail">
+							aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="scroll_introduction">
+			<p></p>
+		</div>
+	</div>
 </body>
 
 </html>
