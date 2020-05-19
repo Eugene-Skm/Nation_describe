@@ -192,7 +192,6 @@
 #Toyama {
 	top: 32%;
 	left: 62%;
-	(-50%, -50%);
 }
 
 #Ishikawa {
@@ -221,7 +220,6 @@
 #Nagano {
 	top: 30%;
 	left: 67%;
-	(-50%, -50%);
 }
 
 #Gifu {
@@ -278,7 +276,7 @@
 #Shimane {
 	top: 46%;
 	left: 31%;
-	(-50%, -50%);
+	
 }
 
 #Hiroshima {
