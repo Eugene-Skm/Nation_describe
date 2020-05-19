@@ -443,6 +443,7 @@ label[id^="labels"]::before {
 .in_Jp {
 	font-size: 14px;
 	margin-left: 5px;
+	margin-left: 5px;;
 }
 
 .info_type::after {
