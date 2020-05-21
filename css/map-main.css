@@ -418,12 +418,6 @@ label[id^="labels"]::before {
 	}
 }
 
-
-
-#main {
-	margin-top: 90px;
-}
-
 .info_box {
 
 	position: relative;
@@ -443,7 +437,6 @@ label[id^="labels"]::before {
 .in_Jp {
 	font-size: 14px;
 	margin-left: 5px;
-	margin-left: 5px;;
 }
 
 .info_type::after {
