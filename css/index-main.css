@@ -81,6 +81,10 @@
 
 }
 
+#Second_content .content_thumbnail:hover {
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
 #Second_content .thumbnail_description {
 	border-radius: 0px 0px 20px 20px;
 }
