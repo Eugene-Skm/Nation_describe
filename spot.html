@@ -7,11 +7,6 @@
 	<link rel="stylesheet" href="css/root.css" type="text/css">
 	<link rel="stylesheet" href="css/header.css" type="text/css">
 	<link rel="stylesheet" href="css/spot-main.css" type="text/css">
-	<script type="text/javascript" src="js/map.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/time.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/operate.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/JPinform-E.js" charset="utf-8"></script>
-	<script src="JPinform.json"></script>
 
 
 </head>
@@ -34,7 +29,41 @@
 	</div>
 	<!--*****************************ヘッダー　ここまで**************************-->
 	<div id="main">
-		<div id="First_content"></div>
+		<div id="center">
+			<div id="serch_keyword"></div>
+			<div id="popular_keyword_janru">
+				<label class="popular_word">aaa</label>
+				<label class="popular_word">bbb</label>
+				<label class="popular_word">ccc</label>
+				<label class="popular_word">ddd</label>
+				<label class="popular_word">eee</label>
+				<label class="popular_word">fff</label>
+				<label class="popular_word">ggg</label>
+				<label class="popular_word">hhh</label>
+			</div>
+
+			<div id="article list of article">
+				<div class="article_item">
+					<div class="thumbnail_img">
+						<img src="img/img_thumbnail.jpg">
+					</div>
+					<div class="article_info">
+						<div class="article_update">2020/05/22</div>
+						<div class="article_title">Introduction of New Site</div>
+						<div class="article_describe">a</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+		<div id="right">
+			<form method="POST" action="">
+				<input type="text" id="search_word">
+				<input type="submit">
+			</form>
+		</div>
 	</div>
 	<div>
 		<iframe id="footer_area" src="footer.html" scrolling="no"></iframe>

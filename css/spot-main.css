@@ -1,3 +1,94 @@
+#main {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin-top: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#center {
+	position: relative;
+	display: inline-block;
+	width: 800px;
+	height: auto;
+}
+
+#right {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 100%;
+}
+
+.article_item {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 150px;
+}
+
+.article_item .thumbnail_img {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 140px;
+	height: 140px;
+	margin: 5px;
+	vertical-align: middle;
+
+}
+
+.article_item .thumbnail_img img {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	/*短いほうにフィット伸縮*/
+	object-fit: cover;
+
+
+}
+
+.article_item .article_info {
+	position: relative;
+	display: inline-block;
+	width: 640px;
+	margin: 5px;
+	text-align: left;
+}
+
+.article_item .article_info .article_update {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #777777;
+	font-size: 14px;
+}
+
+.article_item .article_info .article_title {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	font-size: 26px;
+}
+
+.article_item .article_info .article_describe {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 96px;
+}
+
 #footer_area {
 	position: relative;
 	display: inline-block;
