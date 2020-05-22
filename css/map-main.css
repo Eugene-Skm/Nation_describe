@@ -329,93 +329,7 @@ label[id^="labels"]::before {
 
 /*~~~~~~~~~~~~~~~~~~~start日本時間表示~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-/*===========================レスポンシブ===============================*/
-@media screen and (max-width: 1500px) {
-	#right {
-		width: 250px;
-	}
 
-	#left {
-		width: 200px;
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	#right {
-		width: 200px;
-	}
-}
-
-@media screen and (max-width: 1000px) {}
-
-@media screen and (max-width: 950px) {
-
-	#left {
-		visibility: hidden;
-		overflow-x: hidden;
-		max-width: 0px;
-		top: 90px;
-		background-color: #fefefebb;
-	}
-
-	#left_res_menu {
-		top: 90px;
-		width: 60px;
-		max-width: 60px;
-		overflow-x: visible;
-		z-index: 998;
-	}
-
-	#lefts_res_menu:checked~#left {
-		max-width: 200px;
-		overflow-x: visible;
-		visibility: visible;
-		transition: all 0.2s;
-	}
-
-	#lefts_res_menu:checked~#left_res_menu {
-		left: 200px;
-		transition: ease 0.2s;
-	}
-
-	#lefts_res_menu:not(:checked)~#left {
-		min-width: 0px;
-		overflow-x: hidden;
-		visibility: hidden;
-		transition: all 0.8s;
-	}
-
-	#lefts_res_menu:not(:checked)~#left_res_menu {
-		left: 00px;
-		transition: ease 0.8s;
-	}
-
-	#right {
-		position: relative;
-		display: inline-flex;
-		width: 100%;
-		height: auto;
-		/*background-color: aqua;*/
-		padding-top: 0px;
-		border-top: 1px solid #cccccc;
-		background-color: #fbfbfb;
-
-		margin: 5px;
-	}
-
-	#JapanTime {
-		border: 0px;
-		text-align: left;
-	}
-
-	.region_menu ul {
-		background-color: #f9f9f999;
-	}
-
-	#topcontent {
-		display: inline-block;
-	}
-}
 
 .info_box {
 
@@ -426,6 +340,16 @@ label[id^="labels"]::before {
 #Overview {
 	position: relative;
 	display: inline-flex;
+	flex-direction: column;
+	margin: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+#small_info {
+	position: relative;
+	display: flex;
 	flex-direction: column;
 	margin: 5px;
 	margin-left: 10px;
@@ -492,4 +416,88 @@ label[id^="labels"]::before {
 	overflow-y: hidden;
 	overflow-x: hidden;
 	border: 0px solid;
+	z-index: 999;
+}
+
+/*===========================レスポンシブ===============================*/
+
+@media screen and (max-width: 1000px) {}
+
+@media screen and (max-width: 1500px) {
+
+	#left {
+		visibility: hidden;
+		overflow-x: hidden;
+		max-width: 0px;
+		top: 90px;
+		background-color: #fefefebb;
+	}
+
+	#left_res_menu {
+		top: 90px;
+		width: 60px;
+		max-width: 60px;
+		overflow-x: visible;
+		z-index: 998;
+	}
+
+	#lefts_res_menu:checked~#left {
+		max-width: 200px;
+		overflow-x: visible;
+		visibility: visible;
+		transition: all 0.2s;
+	}
+
+	#lefts_res_menu:checked~#left_res_menu {
+		left: 200px;
+		transition: ease 0.2s;
+	}
+
+	#lefts_res_menu:not(:checked)~#left {
+		min-width: 0px;
+		overflow-x: hidden;
+		visibility: hidden;
+		transition: all 0.8s;
+	}
+
+	#lefts_res_menu:not(:checked)~#left_res_menu {
+		left: 00px;
+		transition: ease 0.8s;
+	}
+
+	#right {
+		position: relative;
+		display: inline-flex;
+		width: 100%;
+		height: auto;
+		/*background-color: aqua;*/
+		padding-top: 0px;
+		border-top: 1px solid #cccccc;
+		background-color: #fbfbfb;
+
+		margin: 5px;
+	}
+
+	#JapanTime {
+		border: 0px;
+		text-align: left;
+	}
+
+	.region_menu ul {
+		background-color: #f9f9f999;
+	}
+
+	#topcontent {
+		display: inline-block;
+	}
+
+
+	#det {
+		display: inline-flex;
+		flex-direction: row;
+	}
+
+	#small_info {
+		min-width: 250px;
+	}
 }
