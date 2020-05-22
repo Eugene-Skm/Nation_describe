@@ -89,12 +89,20 @@
 	border-radius: 0px 0px 20px 20px;
 }
 
+.article_items .content_thumbnail {
+	border-radius: 5px 5px 5px 5px;
+}
+
+.article_items .thumbnail_description {
+	border-radius: 0px 0px 5px 5px;
+}
+
 .thumbnail_img {
 	content: '';
 	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
-	width: 100%;
+	width: 95%;
 	height: 60%;
 	background-size: cover;
 	padding: 2px 2px 2px 2px;
