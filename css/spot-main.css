@@ -18,7 +18,7 @@ body {
 
 #wrap {
 	position: relative;
-	display: flex;
+	display: inline-block;
 	width: 1100px;
 	height: auto;
 	margin-left: auto;
