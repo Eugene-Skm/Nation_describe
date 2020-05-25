@@ -166,7 +166,9 @@ body {
 	display: inline-flex;
 	width: 100%;
 	height: auto;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .spot_type {
