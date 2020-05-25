@@ -163,12 +163,16 @@ body {
 
 #spot_janrus {
 	position: relative;
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
 	height: auto;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
+	text-align: center;
+}
+
+#spot_janrus label {
+	position: relative;
+	display: inline-block;
+	width: 100%;
 }
 
 .spot_type {
@@ -178,4 +182,12 @@ body {
 	width: 150px;
 	height: 200px;
 
+}
+
+#janru_list {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
 }
