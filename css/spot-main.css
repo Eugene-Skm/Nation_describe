@@ -9,7 +9,7 @@ body {
 
 #main {
 	position: relative;
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
 	height: auto;
 	margin-top: 90px;
@@ -34,13 +34,24 @@ body {
 	height: auto;
 }
 
-#right {
-	position: relative;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 250px;
-	height: auto;
+#First_slide {
+	background-color: rgb(22, 21, 21);
+	margin-left: auto;
+	margin-right: auto;
+	height: 200px;
 }
+
+#slide_img {
+	display: inline-block;
+	width: 1000px;
+	height: 100%;
+	background-color: whitesmoke;
+}
+
+#First_slide img {
+	height: 200px;
+}
+
 
 #popular_key {
 	font-size: 18px;
@@ -148,4 +159,21 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 	border: 0px solid;
+}
+
+#spot_janrus {
+	position: relative;
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+}
+
+.spot_type {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 150px;
+	height: 200px;
+
 }
