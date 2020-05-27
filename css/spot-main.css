@@ -23,7 +23,6 @@ body {
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
-	align-items: flex-start;
 
 }
 
@@ -58,7 +57,7 @@ body {
 	font-size: 18px;
 }
 
-#popular_keyword_janru {
+#popular_spot_list {
 	position: relative;
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -68,7 +67,7 @@ body {
 	width: 600px;
 }
 
-#popular_keyword_janru .popular_word {
+#popular_spot_list .popular_spot {
 	position: relative;
 	display: inline-block;
 	width: auto;

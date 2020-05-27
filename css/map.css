@@ -3,7 +3,6 @@
 	--map-size-width: 800px;
 	--map-size-height: 800px;
 }
-
 /*Yes*/
 .Map_size {
 	width: var(--map-size-width);
@@ -42,7 +41,7 @@
 	transform: translate(-50%, -50%);
 }
 
-.pref_label>p {
+.pref_label > p {
 	line-height: 1;
 	margin: 0;
 }
@@ -50,7 +49,7 @@
 
 
 
-#capital:hover+#pref13 {
+#capital:hover + #pref13 {
 	background-color: antiquewhite;
 }
 
@@ -85,7 +84,7 @@
 }
 
 /*----------------------------レスポンシブ--------------------------------*/
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
 
 	/*マップ幅高さの変数化*/
 	:root {
@@ -277,7 +276,7 @@
 #Shimane {
 	top: 46%;
 	left: 31%;
-
+	
 }
 
 #Hiroshima {
