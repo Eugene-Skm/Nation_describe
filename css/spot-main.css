@@ -175,19 +175,78 @@ body {
 	width: 100%;
 }
 
-.spot_type {
-	position: relative;
-	display: inline-block;
-	box-sizing: border-box;
-	width: 150px;
-	height: 200px;
-
-}
-
 #janru_list {
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	width: 100%;
+}
+
+.spot_type {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 180px;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #bbbbbb;
+	/*子要素も丸くする　https://yu-z.com/border-radius/  */
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+
+.spot_type_thumb {
+	position: relative;
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	width: 180px;
+	height: 180px;
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	vertical-align: top;
+	/*画像の余計な隙間を消す　方法　https://techacademy.jp/magazine/26712  */
+}
+
+.spot_type_thumb img {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	line-height: 1.0em;
+	width: 90px;
+	height: 90px;
+	margin: 0px;
+}
+
+.spot_type_thumb .img1 {
+	padding-bottom: 2px;
+	padding-right: 2px;
+}
+
+.spot_type_thumb .img2 {
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+.spot_type_thumb .img3 {
+	padding-top: 2px;
+	padding-right: 2px;
+}
+
+.spot_type_thumb .img4 {
+	padding-top: 2px;
+	padding-left: 2px;
+}
+
+.spot_type_name {
+	font-size: 16px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
