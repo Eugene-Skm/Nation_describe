@@ -141,13 +141,13 @@ a {
 		background-color: #eeeeee;
 	}
 
-	#Hmenu_res:checked ~ .Hmenu_contents {
+	#Hmenu_res:checked~.Hmenu_contents {
 		max-height: 50px;
 		opacity: 1;
 		transition: all 1s;
 	}
 
-	#Hmenu_res:not(:checked) ~ .Hmenu_contents {
+	#Hmenu_res:not(:checked)~.Hmenu_contents {
 		max-height: 0px;
 		opacity: 0;
 		transition: all 1s;
@@ -156,4 +156,10 @@ a {
 
 	/*End　ヘッダメニューのレスポンシブ化（ドロップダウン） */
 
+}
+
+#main {
+	margin-top: 90px;
+	width: 100%;
+	text-align: center;
 }
