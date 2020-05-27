@@ -208,6 +208,7 @@ body {
 	height: 180px;
 	margin: 0px;
 	padding: 0px;
+	background-size: cover;
 }
 
 img {
@@ -223,6 +224,7 @@ img {
 	width: 90px;
 	height: 90px;
 	margin: 0px;
+	object-fit: cover;
 }
 
 .spot_type_thumb .img1 {
