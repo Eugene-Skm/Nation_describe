@@ -7,11 +7,16 @@
 	<link rel="stylesheet" href="css/root.css" type="text/css">
 	<link rel="stylesheet" href="css/header.css" type="text/css">
 	<link rel="stylesheet" href="css/spot-main.css" type="text/css">
+	<script type="text/javascript" src="js/map.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/time.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/operate.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/JPinform-E.js" charset="utf-8"></script>
+	<script src="JPinform.json"></script>
 
 
 </head>
 
-<body>
+<body onload="trigger()">
 	<!--***************ヘッダー　ドロップダウン実現のためIframeは不可***************-->
 	<div id="Main_header">
 		<div id="logo">
@@ -36,9 +41,9 @@
 		</div>
 
 		<div id="wrap">
-			<form action="">
-				<input type="text">
-				<input type="submit">
+			<form action="" id="search_form">
+				<input type="text" id="search_input" autocomplete="on"
+					placeholder="Spot, Area name, Janru or Keyword"><input type="submit" id="search_admit" value="">
 			</form>
 			<div id="spot_janrus">
 				<label for="spot_janrus">Spot Type</label>
