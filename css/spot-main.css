@@ -151,22 +151,33 @@ body {
 }
 
 #list_of_article {
-	display: inline-block;
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
 	box-sizing: border-box;
 	width: 100%;
+}
+
+#list_of_article a {
+	position: relative;
+	display: inline-block;
+	width: auto;
 }
 
 .article_item {
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	width: 80%;
+	width: auto;
 	height: 150px;
 	border: #aaaaaa 1px solid;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 0px;
+	margin-right: 0px;
 
 }
 
