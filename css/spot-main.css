@@ -1,4 +1,7 @@
-html {}
+html {
+	width: auto;
+	height: auto;
+}
 
 body {
 	text-align: center;
