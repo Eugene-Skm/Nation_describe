@@ -127,7 +127,8 @@ body {
 
 #popular_spot_list .popular_spot {
 	position: relative;
-	display: inline-block;
+	display: inline-flex;
+	flex-direction: row;
 	box-sizing: border-box;
 	width: auto;
 	height: auto;
@@ -138,6 +139,9 @@ body {
 }
 
 .popular_spot_thumb {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
 	width: 50%;
 	height: 100%;
 }
@@ -149,6 +153,33 @@ body {
 	height: 100%;
 	object-fit: cover;
 }
+
+.spo_det {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 50%;
+	height: 100%;
+	padding: 5px;
+	text-align: left;
+}
+
+.spo_det .pop_spo_name {
+	font-size: 18px;
+}
+
+.spo_det .area_name {
+	font-size: 14px;
+	color: #999999;
+}
+
+.spo_det .spot_describe {
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 
 #list_of_article {
 	display: inline-block;
