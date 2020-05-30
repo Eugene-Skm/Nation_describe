@@ -49,7 +49,7 @@ body {
 	font-size: 18px;
 }
 
-#popular_spot_list {
+#popular_keyword_janru {
 	position: relative;
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -59,7 +59,7 @@ body {
 	width: 600px;
 }
 
-#popular_spot_list .popular_spot {
+#popular_keyword_janru .popular_word {
 	position: relative;
 	display: inline-block;
 	width: auto;
