@@ -31,16 +31,18 @@ body {
 	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
-	width: 750px;
+	width: 70%;
 	height: auto;
+	padding: 5px;
 }
 
 #right {
 	position: relative;
 	display: inline-block;
 	box-sizing: border-box;
-	width: 250px;
+	width: 30%;
 	height: auto;
+	padding: 5px;
 }
 
 #popular_key {
@@ -72,6 +74,7 @@ body {
 .article_item {
 	position: relative;
 	display: flex;
+	box-sizing: border-box;
 	flex-direction: row;
 	width: 100%;
 	height: 150px;
@@ -99,8 +102,6 @@ body {
 	height: 100%;
 	/*短いほうにフィット伸縮*/
 	object-fit: cover;
-
-
 }
 
 .article_item .article_info {
@@ -149,4 +150,38 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 	border: 0px solid;
+}
+
+.popular_articles {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+}
+
+.popular_article {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100px;
+	padding: 2px;
+
+}
+
+.popular_article .thumbnail_img {
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+}
+
+.popular_article .thumbnail_img img {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	/*短いほうにフィット伸縮*/
+	object-fit: cover;
 }
