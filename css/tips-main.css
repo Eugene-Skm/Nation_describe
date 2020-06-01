@@ -7,7 +7,8 @@
 
 #slide_img {
 	display: inline-block;
-	width: 1000px;
+	width: 100%;
+	max-width: 1000px;
 	height: 100%;
 	background-color: whitesmoke;
 }
@@ -55,11 +56,16 @@
 	border: solid 1px #e6e6e6;
 }
 
+.content_thumbnail h2 {
+	font-size: 16px;
+}
+
 #tips_janru {
 	position: relative;
 	display: inline-block;
 	height: auto;
-	width: 900px;
+	width: 100%;
+	max-width: 900px;
 	margin: 20px;
 }
 
