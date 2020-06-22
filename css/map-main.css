@@ -114,7 +114,6 @@
 	transition: all 1s;
 }
 
-
 #label_Hokkaido:not(:checked) ~ #Pref_set_Hokkaido li,
 #label_Tohoku:not(:checked) ~ #Pref_set_Tohoku li,
 #label_Kanto:not(:checked) ~ #Pref_set_Kanto li,
@@ -129,8 +128,6 @@
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~End県名一覧~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
 #left_res_menu {
 	display: inline-flex;
 	position: absolute;
